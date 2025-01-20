@@ -1,0 +1,145 @@
+main{
+    margin-top: 135px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+
+main .main-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.main-header .my-projects{
+    font-size: 50px; /*5vw*/
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
+.main-header .my-projects-body{
+    font-size: 16px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: rgb(166, 77, 121);
+}
+
+.mfb-second-born{
+    padding: 20px;
+    margin: 15px;
+    max-width: fit-content;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+}
+
+.mfbsb-first-born{
+    background-color: rgb(40, 40, 41);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgb(166, 77, 121);
+    
+}
+
+main .project-image{
+    display: flex;
+    flex-direction: column;
+}
+
+main .project-image img{
+    max-width: 500px; /*100%*/
+    flex: 1;
+}
+
+main .youtube-clone{
+    margin: 15px 0 15px;
+    color: rgb(166, 77, 121);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+main .youtube-clone-texts{
+    max-width: 400px; /*100%*/
+    text-align: justify;
+}
+
+main .tools{
+    margin: 20px 0 8px;
+    background-color: rgb(166, 77, 121);
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+main .tools-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0 8px;
+}
+
+main .tools-list p{
+    background-color: rgb(82, 31, 56);
+    padding: 10px 20px;
+    border: 2px solid rgb(166, 77, 121);
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 4px;
+    /* flex: 1; */
+    text-align: center;
+}
+
+main .view-code{
+    display: flex;
+    /* justify-content: center; */
+    gap: 5px;
+    margin: 20px 0 8px;
+}
+
+main .view-code .live-text{
+    background-color: rgb(166, 77, 121);
+
+}
+
+main .view-code .live-text, main .view-code .code-text{
+    padding: 10px 40px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 900;
+    flex: 1;
+    text-align: center;
+    transition: opacity 0.5s;
+}
+
+main .view-code .live-text:hover, main .view-code .code-text:hover{
+    cursor: pointer;
+    background-color: rgb(166, 77, 121);
+    opacity: 0.8;
+    border: 2px solid rgb(224, 222, 222);
+    border-radius: 4px;
+}
+
+/* For tablets and larger screens */ 
+@media (min-width: 768px) { 
+    .mfb-second-born { 
+        flex-wrap: nowrap; 
+    } 
+} 
+
+/* For mobile devices */ 
+@media (max-width: 767px) { 
+    nav ul { 
+        flex-direction: column; 
+    } 
+    
+    .mfb-second-born { flex-direction: column; gap: 20px; 
+    } 
+}
+

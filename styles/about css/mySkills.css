@@ -1,0 +1,71 @@
+/* .mySkills-div h1{
+    text-align: center;
+} */
+
+.mySkills{
+    margin-top: 50px;
+}
+
+.mySkills img{
+    height: 100px;
+}
+
+.mySkills-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.mySkills-div span{
+    flex: 1;
+    background-color: rgb(166, 66, 121);
+    height: 2px;
+}
+
+.mySkills-div h1 {
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center align the text */
+    white-space: nowrap; /* Prevent text from breaking into multiple lines */
+  }
+
+.image-slider-parent{
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-slider{
+    display: flex;
+    gap: 20px;
+    animation: scroll 30s linear infinite;
+    width: max-content;
+}
+
+.image-slider .rotate{
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+/* 
+.image-slider .node-logo{
+    margin-right: 50px;
+} */

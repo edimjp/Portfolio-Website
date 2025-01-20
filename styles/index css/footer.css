@@ -1,0 +1,50 @@
+footer{
+    animation: slideUp 2s ease-in-out;
+    margin-top: 30px;
+    box-shadow: 0 -10px 15px -10px rgba(255, 254, 254, 0.5); 
+
+    /* width: 100%;
+    background-color: rgb(37, 37, 41);
+    text-align: center;
+    padding: 20px 0; */
+}
+
+@keyframes slideUp {
+    from{
+        transform: translateY(20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+footer .span-div{
+    display: flex;
+}
+
+footer span{
+    background-color: rgb(225, 225, 225);
+    height: 2px;
+    flex: 1;
+}
+
+footer :where(.my-name, .copyright){
+    text-align: center;
+    /* margin: 20px 0; */
+    /* padding: 30px 0;
+    font-size: 20px;
+    font-weight: bolder; */
+}
+
+footer .my-name{
+    padding: 10px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom:0;
+}
+
+footer .copyright{
+    padding-bottom: 10px;
+    margin-top: 5px;
+    font-style: italic;
+}
