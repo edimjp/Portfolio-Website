@@ -87,11 +87,13 @@ nav .side-bar-child{
 }
 nav div .cancel{
     text-align: right;
+    transform: translate(-1%, 115%);
 }
 
 nav div .cancel span{
     cursor: pointer;
     padding: 5px;
+    font-size: x-large;
 }
 
 nav div .side-bar-info{
