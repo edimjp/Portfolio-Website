@@ -11,33 +11,63 @@
     <link rel="stylesheet" href="./styles/index css/mySkills.css" />
     <link rel="stylesheet" href="./styles/index css/footer.css" />
 
-    <script src="./hamburger.js" defer></script>
+    <!-- <script src="./hamburger.js" defer></script> -->
   </head>
 
   <body>
     <header>
       <nav>
-        <div class="title">
-          <h1>EDIM J PAUL</h1>
-          <h3>Software Engineer</h3>
-        </div>
+        <a href="./index.html">
+          <div class="title">
+            <span class="curly-brace">{</span>
+            <div>
+              <span class="first-name">Edim</span>
+              <span class="other-name">J Paul</span>
+            </div>
+            <span class="curly-brace">}</span>
+            <span class="name-title">Software Engineer 𓃶</span>
+          </div>
+        </a>
 
-        <img src="./Icons/hamburger-menu.svg" alt="hamburger-menu" />
+        <img
+          class="hamburger"
+          src="./Icons/hamburger-menu.svg"
+          alt="hamburger-menu"
+        />
 
         <ul>
           <li>
-            <a
-              href="./index.html"
-              style="
-                background-color: rgb(166, 77, 121);
-                border: 2px solid white;
-              "
-              >Home</a
-            >
+            <a href="./projects.html">
+              <img src="./Icons/portfolio-svgrepo-com.svg" alt="Portfolio" />
+              <span>Portfolio</span>
+            </a>
           </li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a href="#">
+              <img src="./Icons/services-svgrepo-com.svg" alt="Services" />
+              <span>Services</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="./Icons/contact-phone-talking-svgrepo-com.svg"
+                alt="Contact"
+              />
+              <span>Let's Talk</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="./Icons/schedule-calendar-svgrepo-com.svg"
+                alt="Schedule"
+              />
+              <span>Schedule</span>
+            </a>
+          </li>
         </ul>
 
         <div class="side-bar">
@@ -54,8 +84,8 @@
       </nav>
     </header>
 
-    <main>
-      <div class="profile-section">
+    <main class="mainDiv">
+      <!-- <div class="profile-section">
         <img
           class="profile-pic"
           src="./pictures/1-DSC_0909.jpg"
@@ -79,6 +109,27 @@
             </a>
           </div>
         </div>
+      </div> -->
+
+      <div class="main-writeup">
+        <h1>Crafting Solution Via Coding!</h1>
+        <p>
+          "A seasoned software engineer delivering exceptional solutions through
+          innovative and cutting-edge technologies."
+        </p>
+        <div class="skills-div">
+          <div class="skills">
+            <img src="./Icons/js02-svgrepo-com.svg" alt="JavaScript" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img
+          class="profile-pic"
+          src="./pictures/1-DSC_0909.jpg"
+          alt="profile-pic"
+        />
       </div>
     </main>
 

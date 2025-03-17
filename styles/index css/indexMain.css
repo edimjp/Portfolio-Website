@@ -9,6 +9,16 @@
     padding-right: 60px;
 }
 
+@keyframes slideUp {
+    from{
+        transform: translateY(20%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 .profile-pic{
     max-height: 350px;
     max-width: 350px;
@@ -65,15 +75,6 @@
     margin-bottom: 10px;
 }
 
-@keyframes slideUp {
-    from{
-        transform: translateY(20%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
 
 .profile-text :where(h1, h3){
     font-size: 50px;
@@ -124,5 +125,43 @@
     }
 }
 
+main.mainDiv{
+    display: flex;
+    gap: 2rem;
+}
 
+main div.main-writeup{
+    max-width: 50rem;
+}
+
+main div h1{
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+
+main div p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+main div.skills-div{
+    display: flex;
+}
+
+main div.skills-div .skills img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+main div img.profile-pic{
+    max-height: 350px;
+    max-width: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    mix-blend-mode:luminosity;
+    margin-right: 50px;
+    animation: bounce 4s linear infinite forwards;
+}
 

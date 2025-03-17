@@ -25,7 +25,7 @@ sideBarCancel.addEventListener("click", removeSideBar)
 */
 
 document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector("nav img");
+    const hamburger = document.querySelector("nav img.hamburger");
     const sideBar = document.querySelector("nav .side-bar");
     const sideBarCancel = document.querySelector("nav .cancel span");
   
