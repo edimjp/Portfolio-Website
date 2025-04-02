@@ -1,50 +1,165 @@
-footer{
-    animation: slideUp 2s ease-in-out;
-    margin-top: 30px;
-    box-shadow: 0 -10px 15px -10px rgba(255, 254, 254, 0.5); 
-
-    /* width: 100%;
+footer {
+  /* animation: slideUp 2s ease-in-out; */
+  margin-top: 30px;
+  /* box-shadow: 0 -10px 15px -10px rgba(255, 254, 254, 0.5); */
+  background-color: rgb(37, 37, 41);
+  /* width: 100%;
     background-color: rgb(37, 37, 41);
     text-align: center;
     padding: 20px 0; */
 }
 
-@keyframes slideUp {
-    from{
-        transform: translateY(20%);
-    }
-    to{
-        transform: translateY(0);
-    }
+/* @keyframes slideUp {
+  from {
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+} */
+/* footer div.span-div span {
+  background-color: rgb(225, 225, 225);
+  height: 2px;
+  flex: 1;
+
+} */
+
+footer .span-div {
+  display: flex;
 }
 
-footer .span-div{
-    display: flex;
+footer div.footer-content {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin: 3rem 2rem;
 }
 
-footer span{
-    background-color: rgb(225, 225, 225);
-    height: 2px;
-    flex: 1;
+footer div.footer-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-footer :where(.my-name, .copyright){
-    text-align: center;
-    /* margin: 20px 0; */
-    /* padding: 30px 0;
+footer div.footer-content a {
+  text-decoration: none;
+  /* display: flex; */
+}
+
+footer span.span-grand-parent {
+  display: flex;
+}
+
+footer span.span-parent {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+footer span.span-parent:hover {
+  transform: scale(1.05, 1.02);
+}
+
+footer span.span-parent::after {
+  content: "";
+  position: absolute;
+  /* background-color: red; */
+  height: 110%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+footer span.span-parent:hover::after {
+  background: linear-gradient(
+    to bottom left,
+    rgb(166, 77, 121),
+    rgb(72, 191, 145)
+  );
+  filter: blur(0.7rem);
+}
+
+footer div.title span.curly-brace {
+  font-size: 1.2rem;
+}
+
+footer div.title span.first-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(166, 77, 121);
+  padding: 0 0.3rem 0 0.6rem;
+}
+
+footer div.title span.other-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(255, 223, 128);
+  padding-right: 0.6rem;
+}
+
+footer p.more-me {
+  max-width: 25rem;
+}
+
+footer div.footer-content div.availabilty {
+  /* display: flex; */
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer span.afw {
+  background-color: rgb(26, 26, 29);
+  border-radius: 15px;
+  /* font-size: 1.2rem; */
+  padding: 0.15rem 0.8rem;
+}
+
+footer ul.socials {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+footer ul li img,
+footer a.quick-link img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+footer a.quick-link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+footer :where(.my-name, .copyright) {
+  text-align: center;
+  /* margin: 20px 0; */
+  /* padding: 30px 0;
     font-size: 20px;
     font-weight: bolder; */
 }
 
-footer .my-name{
-    padding: 10px 0px 0px 0px;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-bottom:0;
+.copy {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(200, 200, 200);
 }
 
-footer .copyright{
-    padding-bottom: 10px;
-    margin-top: 5px;
-    font-style: italic;
+.copy span {
+  margin: 0.7rem 0;
+}
+
+footer .my-name {
+  /* padding: 10px 0px 0px 0px; */
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 1rem;
+}
+
+footer .copyright {
+  font-style: italic;
+  margin-right: 1rem;
 }

@@ -1,25 +1,25 @@
-.profile-section{
-    display: flex;
-    /* grid-template-columns: 300px 1fr; */
-    background-color: rgb(31, 31, 34);
-    margin-top: 110px;
-    justify-content: space-evenly;
-    align-items: center;
-    animation: slideUp 2s ease-in-out;
-    padding-right: 60px;
+.profile-section {
+  display: flex;
+  /* grid-template-columns: 300px 1fr; */
+  background-color: rgb(31, 31, 34);
+  margin-top: 110px;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: slideUp 2s ease-in-out;
+  padding-right: 60px;
 }
 
 @keyframes slideUp {
-    from{
-        transform: translateY(20%);
-    }
+  from {
+    transform: translateY(20%);
+  }
 
-    to {
-        transform: translateY(0);
-    }
+  to {
+    transform: translateY(0);
+  }
 }
 
-.profile-pic{
+/* .profile-pic{
     max-height: 350px;
     max-width: 350px;
     border-radius: 50%;
@@ -30,138 +30,217 @@
     margin-right: 50px;
     animation: bounce 4s linear infinite forwards;
     
-}
+} */
 
 @keyframes bounce {
-    0%{
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50%{
-        transform: translateY(-4%);
-    }
-    100%{
-        transform: translateY(0);
-    }
+  50% {
+    transform: translateY(-4%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.profile-text{
-    /* flex: 1; */
-    /* margin-right: 200px;
+.profile-text {
+  /* flex: 1; */
+  /* margin-right: 200px;
     margin-left: 200px; */
-    /* max-width: 500px; */
-    text-align: justify;
+  /* max-width: 500px; */
+  text-align: justify;
 }
 
-.profile-text h1{
-    margin-top: 40px;
-    margin-bottom: 0;
-    margin-left: 30px;
-    font-size: 3rem;
+.profile-text h1 {
+  margin-top: 40px;
+  margin-bottom: 0;
+  margin-left: 30px;
+  font-size: 3rem;
 }
 
-
-.profile-section p{
-    /* background-color: rgb(59, 28, 50); */
-    display: inline-block;
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* border-radius: 20px; */
-    border: 2px solid rgb(166, 77, 121);
-    max-width: 450px;
-    font-size: 1.2rem;
-    transform: skew(-20deg);
-    margin-bottom: 10px;
+.profile-section p {
+  /* background-color: rgb(59, 28, 50); */
+  display: inline-block;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* border-radius: 20px; */
+  border: 2px solid rgb(166, 77, 121);
+  max-width: 450px;
+  font-size: 1.2rem;
+  transform: skew(-20deg);
+  margin-bottom: 10px;
 }
 
-
-.profile-text :where(h1, h3){
-    font-size: 50px;
+.profile-text :where(h1, h3) {
+  font-size: 50px;
 }
 
-.profile-text div{
-    margin-left: 20px;
-    margin-top: 5px;
-    margin-bottom: 30px;    
+.profile-text div {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
-.profile-text div :where(.project-button, .bio-button){
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight:700;
-    border: 2px solid white;
-    border-radius: 5px;
+.profile-text div :where(.project-button, .bio-button) {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
-.bio-button{
-    margin-right: 12px;
-    background-color: rgb(166, 77, 121);
-    color: white;
-    transition: opacity 0.2s;
+.bio-button {
+  margin-right: 12px;
+  background-color: rgb(166, 77, 121);
+  color: white;
+  transition: opacity 0.2s;
 }
 
-.bio-button:hover{
-    opacity: 0.8;
-    background-color: rgba(255, 255, 255, 0.918);
-    color: rgb(166, 77, 121);
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.918);
+.bio-button:hover {
+  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.918);
+  color: rgb(166, 77, 121);
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.918);
 }
 
-@media(max-width: 768px){
-    .profile-section{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .profile-text h1{
-        font-size: 1.5rem;
-    }
+  .profile-text h1 {
+    font-size: 1.5rem;
+  }
 
-    .profile-text p{
-        font-size: 1rem;
-    }
+  .profile-text p {
+    font-size: 1rem;
+  }
 }
 
-main.mainDiv{
+main.mainDiv {
+  padding-top: 6rem;
+}
+
+main div.main-writeup-div {
+  display: flex;
+  gap: 2rem;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+
+main div.main-writeup {
+  max-width: 50rem;
+  margin-left: 3rem;
+}
+
+main div.main-writeup > :nth-child(2) {
+  margin: 1.5rem 0;
+}
+
+main div h1 {
+  font-size: 3.7rem;
+  font-weight: 700;
+  color: rgb(253, 253, 253);
+}
+
+main div p {
+  font-size: 1.13rem;
+  font-weight: 400;
+}
+
+/* main div.skills-div{
     display: flex;
-    gap: 2rem;
+} */
+
+main div.skills {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-main div.main-writeup{
-    max-width: 50rem;
+main div.skills div {
+  background: linear-gradient(120deg, rgb(37, 37, 41), rgb(83, 83, 95));
+  box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
+  border-radius: 20px;
+  border: 2px solid rgb(95, 47, 71);
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
-main div h1{
-    font-size: 3.7rem;
-    font-weight: 700;
+main div.skills div:hover {
+  transform: scale(1.05, 1.025);
+  border-color: rgb(255, 251, 253);
 }
 
-main div p{
-    font-size: 1.1rem;
-    font-weight: 400;
+main div.skills div span {
+  color: rgb(255, 223, 128);
+  font-size: 1rem;
 }
 
-main div.skills-div{
-    display: flex;
+main div.skills img {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
-main div.skills-div .skills img{
-    height: 1.5rem;
-    width: 1.5rem;
+main div.main-writeup-div > :last-child {
+  /* margin-right: 7rem; */
+  margin: 0 auto;
 }
 
-main div img.profile-pic{
-    max-height: 350px;
-    max-width: 350px;
-    border-radius: 50%;
-    object-fit: cover;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    mix-blend-mode:luminosity;
-    margin-right: 50px;
-    animation: bounce 4s linear infinite forwards;
+main div img.profile-pic {
+  max-height: 350px;
+  max-width: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  mix-blend-mode: luminosity;
+  /* margin-right: 50px; */
+  animation: bounce 4s linear infinite forwards;
 }
 
+main.mainDiv > :last-child {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  /* align-items: center; */
+  margin-left: 3rem;
+}
+
+main.mainDiv > :last-child a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid rgb(166, 77, 121);
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+main.mainDiv > :last-child a.project-link {
+  background: linear-gradient(
+    to bottom left,
+    rgb(166, 77, 121),
+    rgb(72, 191, 145)
+  );
+}
+
+main.mainDiv > :last-child a img {
+  height: 2rem;
+  width: 2rem;
+}
+
+main.mainDiv > :last-child a:hover {
+  border: 2px solid rgb(253, 253, 253);
+  transform: scale(1.05, 1.025);
+}
