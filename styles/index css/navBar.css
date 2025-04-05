@@ -26,11 +26,185 @@ nav::after {
   background: linear-gradient(to left, white, rgb(166, 77, 121));
 }
 
+nav img.hamburger {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  /* background-color: red; */
+  display: none;
+  /* margin-right: 1rem; */
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+}
+
+nav img.hamburger:hover {
+  transform: scale(1.1, 1.1);
+}
+
+aside.side-bar {
+  width: 70vw;
+  background: linear-gradient(
+    to bottom right,
+    rgb(46, 46, 51),
+    rgb(26, 26, 29)
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%); /* Initially hidden */
+  transition: transform 0.5s ease; /* Smooth slide effect */
+  z-index: 1;
+}
+
+aside div.side-bar-child {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+aside div.title {
+  display: flex;
+  background: linear-gradient(to top left, rgb(26, 26, 29), rgb(40, 40, 44));
+  padding: 1.1rem 0;
+  border-bottom: 2px rgb(166, 77, 121) solid;
+  align-items: center;
+}
+
+aside div.span-parent {
+  margin: 0 auto 0 1rem;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  align-items: center;
+  position: relative;
+}
+
+aside div.span-parent span {
+  align-self: center;
+}
+
+nav aside div.cancel {
+  /* margin: 1.2rem 1.2rem 0 auto; */
+  margin-left: auto;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+nav aside div.cancel:hover {
+  transform: scale(1.1, 1.1);
+}
+
+nav div.cancel span {
+  cursor: pointer;
+  padding: 5px;
+  font-size: x-large;
+  color: rgb(166, 77, 121);
+}
+
+aside div.side-bar-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+nav div.Available-div {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1.3rem 0;
+  justify-content: center;
+}
+
+nav div.Available-div span.Available {
+  background-color: rgb(26, 26, 29);
+  font-size: 0.7rem;
+}
+
+nav div.Available-div span {
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 1.5rem;
+  padding: 0 0.5rem;
+  /* font-size: 1rem; */
+  padding: 8px 8px;
+  min-width: 7rem;
+  text-align: center;
+}
+
+aside div.aside-links {
+  background: linear-gradient(to top left, rgb(26, 26, 29), rgb(39, 39, 43));
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 1rem 0 0 1rem; */
+}
+
+aside div.aside-links a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+aside div.aside-links a:hover {
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+aside div.aside-links a img {
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(255, 82, 168, 0.05);
+
+  border-radius: 4px;
+  padding: 4px 0;
+}
+
+aside div.link-parent {
+  width: 80%;
+  padding: 1rem 0;
+}
+
+aside div.aside-links div.link-title {
+  font-weight: 500;
+}
+
+aside div.aside-links div.link-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* font-size: 0.8rem; */
+  width: 100%;
+}
+
+aside div.aside-links div.bottom-A-link {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(200, 200, 200);
+  padding: 1rem 0;
+}
+
+aside div.aside-links div.bottom-A-link img {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+aside div.aside-links div.bottom-A-link a:hover {
+  background-color: transparent;
+}
+
 nav a {
   text-decoration: none;
 }
 
-nav div.title {
+nav a div.title {
   margin-left: 2rem;
   display: flex;
   align-items: center;
@@ -40,23 +214,24 @@ nav div.title {
   transition: transform 0.3s ease-in-out;
 }
 
-nav div.title:hover {
+nav a div.title:hover {
   transform: scale(1.05, 1.02);
 }
 
-nav div.title::before {
+nav a div.title::before,
+nav aside div.span-parent::before {
   content: "";
   position: absolute;
   height: 110%;
   width: 100%;
   /* background-color: rgb(95, 47, 71); */
-  left: 1rem;
   z-index: -1;
   border-radius: 15px;
   transition: filter 0.3s ease;
 }
 
-nav div.title:hover::before {
+nav a div.title:hover::before,
+nav aside div.span-parent:hover::before {
   background: linear-gradient(
     to bottom left,
     rgb(166, 77, 121),
@@ -65,11 +240,11 @@ nav div.title:hover::before {
   filter: blur(0.7rem);
 }
 
-nav div span.curly-brace {
-  font-size: 1.2rem;
-}
+/* nav div span.curly-brace {
+  /* font-size: 1rem; 
+} */
 
-nav div.title div {
+nav a div.title div {
   padding: 0 0.6rem;
 }
 
@@ -87,14 +262,25 @@ nav div span.other-name {
 
 nav div span.name-title {
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-size: 0.9rem;
-  font-weight: 450;
+  /* font-size: 1rem; */
+  /* font-weight: 450; */
   margin-top: 0;
   color: rgb(166, 77, 121);
   border-left: 0.1rem solid rgb(166, 77, 121);
   padding: 0.2rem 0 0.2rem 1rem;
   margin-left: 1rem;
   color: rgb(255, 223, 128);
+}
+
+nav a.contact-link {
+  margin-right: 1rem;
+  /* margin-left: auto; */
+  display: none;
+}
+
+nav img.contact {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 nav ul {
@@ -167,58 +353,53 @@ nav ul a:hover{
 }
 */
 
-nav img.hamburger {
-  max-height: 32px;
-  cursor: pointer;
-  /* background-color: red; */
-  display: none;
-  margin-left: auto;
-  margin-right: 1rem;
-}
-
-aside.side-bar {
-  width: 70vw;
-  background-color: rgb(37, 37, 41);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  transform: translateX(100%); /* Initially hidden */
-  transition: transform 0.5s ease; /* Smooth slide effect */
-}
-
-aside .side-bar-child {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-nav div .cancel {
-  text-align: right;
-  transform: translate(-1%, 115%);
-}
-
-nav div .cancel span {
-  cursor: pointer;
-  padding: 5px;
-  font-size: x-large;
-}
-
-nav div .side-bar-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 @media screen and (max-width: 1030px) {
+  nav {
+    justify-content: space-between;
+  }
+
   nav ul {
     display: none;
   }
 
   nav img.hamburger {
     display: inline;
+  }
+
+  nav a div.title {
+    margin: 0;
+  }
+
+  nav a.contact-link {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  nav a div.title span.name-title {
+    display: none;
+  }
+  nav a div.title {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p,
+  span {
+    font-size: 0.89rem;
+  }
+
+  nav div span.first-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  nav div span.other-name {
+    font-size: 1.3rem;
+    font-weight: 300;
   }
 }
