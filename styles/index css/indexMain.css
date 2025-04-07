@@ -45,6 +45,7 @@ main div.skills {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 main div.skills div {
@@ -54,6 +55,7 @@ main div.skills div {
   border: 2px solid rgb(95, 47, 71);
   padding: 0.5rem 2rem;
   display: flex;
+  /* flex-grow: 1; */
   align-items: center;
   gap: 1rem;
   transition: all 0.3s ease-in-out;

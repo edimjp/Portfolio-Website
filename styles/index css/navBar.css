@@ -1,6 +1,6 @@
-header {
+/* header {
   position: relative;
-}
+} */
 
 nav {
   display: flex;
@@ -10,7 +10,7 @@ nav {
   right: 0;
   top: 0;
   /* box-shadow: 0px 4px 10px rgba(207, 95, 151, 0.8); */
-  z-index: 2;
+  z-index: 1;
   padding: 1.1rem 0;
   border-bottom: 0.2rem solid transparent;
   align-items: center;
@@ -56,13 +56,35 @@ aside.side-bar {
   flex-direction: column;
   transform: translateX(-100%); /* Initially hidden */
   transition: transform 0.5s ease; /* Smooth slide effect */
-  z-index: 1;
+  z-index: 10;
 }
+
+/* aside.side-bar::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(122, 122, 122, 0.5);
+} */
 
 aside div.side-bar-child {
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
+}
+
+nav div.sbc-guard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* width: 100vw;
+  height: 100vh; */
+  z-index: 9;
+  display: none;
 }
 
 aside div.title {
@@ -71,6 +93,7 @@ aside div.title {
   padding: 1.1rem 0;
   border-bottom: 2px rgb(166, 77, 121) solid;
   align-items: center;
+  z-index: 0;
 }
 
 aside div.span-parent {
@@ -100,7 +123,7 @@ nav aside div.cancel:hover {
 nav div.cancel span {
   cursor: pointer;
   padding: 5px;
-  font-size: x-large;
+  font-size: 1.2rem;
   color: rgb(166, 77, 121);
 }
 
@@ -401,5 +424,8 @@ nav ul a:hover{
   nav div span.other-name {
     font-size: 1.3rem;
     font-weight: 300;
+  }
+  aside div.aside-links div.link-description {
+    font-size: 0.7rem;
   }
 }

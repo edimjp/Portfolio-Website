@@ -33,7 +33,6 @@ footer div.footer-content {
   /* align-items: center; */
   justify-content: space-between;
   gap: 1.5rem;
-
   margin: 0 0.5rem;
   flex-wrap: wrap;
 }
@@ -44,6 +43,8 @@ footer div.footer-content > * {
   gap: 2rem;
   margin-top: 2rem;
   flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 footer div.footer-content > * > * {
@@ -110,7 +111,7 @@ footer div.title span.other-name {
 }
 
 footer p.more-me {
-  max-width: 20rem;
+  max-width: 18rem;
 }
 
 footer div.footer-content div.availabilty {
@@ -201,5 +202,23 @@ footer .copyright {
     font-style: italic;
     margin-right: 0.5rem;
     font-size: 0.6rem;
+  }
+
+  footer div.title span.curly-brace {
+    font-size: 1rem;
+  }
+
+  footer div.title span.first-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    /* color: rgb(166, 77, 121); */
+    /* padding: 0 0.3rem 0 0.6rem; */
+  }
+
+  footer div.title span.other-name {
+    font-size: 1.3rem;
+    font-weight: 300;
+    /* color: rgb(255, 223, 128); */
+    /* padding-right: 0.6rem; */
   }
 }
