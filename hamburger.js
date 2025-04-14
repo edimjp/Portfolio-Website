@@ -1,34 +1,13 @@
-/*
-const hamburger = document.querySelector('nav img')
-
-
-function handleClick (){
-    const sideBar = document.querySelector('nav .side-bar')
-    
-    sideBar.removeAttribute('hidden')
-
-}
-
-hamburger.addEventListener("click", handleClick)
-
-function removeSideBar(){
-    const cancelSideBar = document.querySelector('nav .side-bar')
-
-    cancelSideBar.setAttribute('hidden', '')
-}
-
-
-const sideBarCancel = document.querySelector('nav .cancel span')
-
-sideBarCancel.addEventListener("click", removeSideBar)
-
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.querySelector("nav img.hamburger");
+  const hamburger = document.querySelector("nav svg.hamburger");
   const sideBar = document.querySelector("aside.side-bar");
   const sideBarCancel = document.querySelector("nav div.cancel span");
   const sideBarOverlay = document.querySelector("div.sbc-guard");
+  const light_dark_Button = document.querySelector("nav button");
+  // console.log(light_dark_Button);
+
+  const htmlTag = document.querySelector("html");
+  // const bodyTag = document.querySelector("body");
 
   // Function to open the sidebar
   function openSideBar() {
@@ -42,6 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
     sideBarOverlay.style.display = "none";
   }
 
+  //Dark/Light Mode
+  function light_dark_mode() {
+    htmlTag.classList.toggle("dark-mode");
+  }
+
   // Event listeners
   hamburger.addEventListener("click", openSideBar);
   sideBarCancel.addEventListener("click", closeSideBar);
@@ -49,6 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   sideBarCancel.addEventListener("click", closeSideBar);
 
   sideBarOverlay.addEventListener("click", closeSideBar);
+
+  light_dark_Button.addEventListener("click", light_dark_mode);
 
   //Prevent overlay click when inside the sidebar
 

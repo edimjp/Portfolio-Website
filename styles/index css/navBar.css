@@ -26,28 +26,37 @@ nav::after {
   background: linear-gradient(to left, white, rgb(166, 77, 121));
 }
 
-nav img.hamburger {
+/* nav img.hamburger {
   height: 1.5rem;
   width: 1.5rem;
   cursor: pointer;
-  /* background-color: red; */
+  /* background-color: red; 
   display: none;
-  /* margin-right: 1rem; */
+  /* margin-right: 1rem; 
   margin-left: 1rem;
+  transition: transform 0.3s ease;
+} */
+
+nav svg.hamburger {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  display: none;
+  margin-left: 1rem;
+  stroke: rgb(95, 47, 71);
+  stroke-width: 1;
   transition: transform 0.3s ease;
 }
 
-nav img.hamburger:hover {
+nav svg.hamburger:hover,
+nav button:hover,
+aside div.aside-links a:hover {
   transform: scale(1.1, 1.1);
 }
 
 aside.side-bar {
   width: 70vw;
-  background: linear-gradient(
-    to bottom right,
-    rgb(46, 46, 51),
-    rgb(26, 26, 29)
-  );
+  background: linear-gradient(120deg, #f9fafb 0%, #e5e7eb 40%, #1a1a1d 100%);
   position: fixed;
   top: 0;
   left: 0;
@@ -58,14 +67,6 @@ aside.side-bar {
   transition: transform 0.5s ease; /* Smooth slide effect */
   z-index: 10;
 }
-
-/* aside.side-bar::before {
-  content: "";
-  position: absolute;
-  width: 100vw;
-  height: 100%;
-  background-color: rgba(122, 122, 122, 0.5);
-} */
 
 aside div.side-bar-child {
   display: flex;
@@ -80,7 +81,7 @@ nav div.sbc-guard {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   /* width: 100vw;
   height: 100vh; */
   z-index: 9;
@@ -89,7 +90,7 @@ nav div.sbc-guard {
 
 aside div.title {
   display: flex;
-  background: linear-gradient(to top left, rgb(26, 26, 29), rgb(40, 40, 44));
+  background: linear-gradient(120deg, #f9fafb 0%, #e5e7eb 40%, #1a1a1d 100%);
   padding: 1.1rem 0;
   border-bottom: 2px rgb(166, 77, 121) solid;
   align-items: center;
@@ -124,7 +125,7 @@ nav div.cancel span {
   cursor: pointer;
   padding: 5px;
   font-size: 1.2rem;
-  color: rgb(166, 77, 121);
+  color: #6366f1;
 }
 
 aside div.side-bar-info {
@@ -143,6 +144,7 @@ nav div.Available-div {
 nav div.Available-div span.Available {
   background-color: rgb(26, 26, 29);
   font-size: 0.7rem;
+  color: rgb(255, 255, 255);
 }
 
 nav div.Available-div span {
@@ -153,10 +155,11 @@ nav div.Available-div span {
   padding: 8px 8px;
   min-width: 7rem;
   text-align: center;
+  color: rgb(26, 26, 29);
 }
 
 aside div.aside-links {
-  background: linear-gradient(to top left, rgb(26, 26, 29), rgb(39, 39, 43));
+  background: linear-gradient(120deg, #f9fafb 0%, #e5e7eb 40%, #1a1a1d 100%);
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -173,6 +176,7 @@ aside div.aside-links a {
   margin: 0 0.5rem;
   border-radius: 4px;
   padding-left: 0.5rem;
+  background-color: rgb(151, 151, 170);
   transition: background-color 0.3s ease;
 }
 
@@ -180,13 +184,22 @@ aside div.aside-links a:hover {
   background-color: rgba(51, 51, 51, 0.7);
 }
 
-aside div.aside-links a img {
+/* aside div.aside-links a img {
   height: 2rem;
   width: 2rem;
   background-color: rgba(255, 82, 168, 0.05);
 
   border-radius: 4px;
   padding: 4px 0;
+} */
+
+aside div.aside-links a svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: rgba(255, 82, 168, 0.05);
+  border-radius: 4px;
+  padding: 4px 0;
+  fill: #6366f1;
 }
 
 aside div.link-parent {
@@ -206,12 +219,21 @@ aside div.aside-links div.link-description {
   width: 100%;
 }
 
+aside div.link-description,
+aside div.link-title {
+  color: rgb(26, 26, 29);
+}
+
 aside div.aside-links div.bottom-A-link {
   margin-top: auto;
   display: flex;
   justify-content: center;
   border-top: 1px solid rgb(200, 200, 200);
   padding: 1rem 0;
+}
+
+aside div.aside-links div.bottom-A-link a {
+  background-color: transparent;
 }
 
 aside div.aside-links div.bottom-A-link img {
@@ -263,10 +285,6 @@ nav aside div.span-parent:hover::before {
   filter: blur(0.7rem);
 }
 
-/* nav div span.curly-brace {
-  /* font-size: 1rem; 
-} */
-
 nav a div.title div {
   padding: 0 0.6rem;
 }
@@ -295,15 +313,13 @@ nav div span.name-title {
   color: rgb(255, 223, 128);
 }
 
-nav a.contact-link {
-  margin-right: 1rem;
-  /* margin-left: auto; */
-  display: none;
+nav a.mode-link svg {
+  fill: rgb(95, 47, 71);
 }
 
-nav img.contact {
-  height: 1.5rem;
-  width: 1.5rem;
+nav svg.dark_light_mode {
+  height: 1.3rem;
+  width: 1.3rem;
 }
 
 nav ul {
@@ -313,7 +329,7 @@ nav ul {
   /* justify-content: space-evenly; */
   align-items: center;
   margin-left: auto;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   gap: 2rem;
 }
 
@@ -338,6 +354,12 @@ nav ul li a:hover {
   transform: scale(1.05, 1.02);
 }
 
+nav ul li a svg.portfolio {
+  fill: none;
+  stroke: rgb(95, 47, 71);
+  stroke-width: 3;
+}
+
 nav ul li a span {
   display: flex;
   align-items: center;
@@ -355,28 +377,25 @@ nav ul li a img {
   width: 2.2rem;
 }
 
-/*
-nav ul a{
-    /* background-color: rgb(59, 28, 50);
-    text-decoration: none;
-    border: 2px solid rgb(166, 77, 121);
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    transition: opacity 0.3s, color 0.3s, box-shadow 0.3s;
-} 
-
-nav ul a:hover{
-    background-color: rgb(95, 47, 71);
-    opacity: 0.8;
-    color: rgb(2, 2, 2);
-    box-shadow: 2px 2px 5px rgba(207, 95, 151, 0.8);
-    cursor: pointer;
+html.dark-mode nav ul li svg,
+nav ul li svg {
+  height: 2.3rem;
+  width: 2.3rem;
 }
-*/
 
-@media screen and (max-width: 1030px) {
+nav button {
+  all: unset;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+nav ul svg.dark_light_mode {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media screen and (max-width: 1082px) {
   nav {
     justify-content: space-between;
   }
@@ -385,7 +404,7 @@ nav ul a:hover{
     display: none;
   }
 
-  nav img.hamburger {
+  nav svg.hamburger {
     display: inline;
   }
 
@@ -393,9 +412,9 @@ nav ul a:hover{
     margin: 0;
   }
 
-  nav a.contact-link {
+  /* nav a.mode-link {
     display: inline;
-  }
+  } */
 }
 
 @media screen and (max-width: 470px) {

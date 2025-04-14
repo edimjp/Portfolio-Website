@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-mode">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -17,11 +17,15 @@
   <body>
     <header>
       <nav>
-        <img
+        <!-- <img
           class="hamburger"
           src="./Icons/hamburger-menu.svg"
           alt="hamburger-menu"
-        />
+        /> -->
+
+        <svg class="hamburger">
+          <use href="./Icons/icons.svg#hamburger"></use>
+        </svg>
 
         <div class="sbc-guard"></div>
         <aside class="side-bar">
@@ -46,10 +50,14 @@
               <div class="aside-links">
                 <div>
                   <a href="#">
-                    <img
+                    <!-- <img
                       src="./Icons/portfolio-svgrepo-com.svg"
                       alt="Portfolio"
-                    />
+                    /> -->
+
+                    <svg>
+                      <use href="./Icons/icons.svg#portfolio"></use>
+                    </svg>
 
                     <div class="link-parent">
                       <div class="link-title">Portfolio</div>
@@ -62,10 +70,14 @@
                 </div>
                 <div>
                   <a href="#">
-                    <img
+                    <!-- <img
                       src="./Icons/services-svgrepo-com.svg"
                       alt="services"
-                    />
+                    /> -->
+
+                    <svg>
+                      <use href="./Icons/icons.svg#Services"></use>
+                    </svg>
 
                     <div class="link-parent">
                       <div class="link-title">Services</div>
@@ -78,10 +90,14 @@
                 </div>
                 <div>
                   <a href="#">
-                    <img
+                    <!-- <img
                       src="./Icons/contact-phone-talking-svgrepo-com.svg"
                       alt="Let's Talk"
-                    />
+                    /> -->
+
+                    <svg>
+                      <use href="./Icons/icons.svg#contact-phone"></use>
+                    </svg>
 
                     <div class="link-parent">
                       <div class="link-title">Let's Talk</div>
@@ -94,10 +110,14 @@
                 </div>
                 <div>
                   <a href="#">
-                    <img
+                    <!-- <img
                       src="./Icons/schedule-calendar-svgrepo-com.svg"
                       alt="Schedule"
-                    />
+                    /> -->
+
+                    <svg>
+                      <use href="./Icons/icons.svg#Schedule"></use>
+                    </svg>
 
                     <div class="link-parent">
                       <div class="link-title">Schedule</div>
@@ -110,7 +130,11 @@
                 </div>
                 <div>
                   <a href="#">
-                    <img src="./Icons/profile-svgrepo-com.svg" alt="Schedule" />
+                    <!-- <img src="./Icons/profile-svgrepo-com.svg" alt="Schedule" /> -->
+
+                    <svg>
+                      <use href="./Icons/icons.svg#Meet_Me"></use>
+                    </svg>
 
                     <div class="link-parent">
                       <div class="link-title">Meet Me</div>
@@ -123,16 +147,30 @@
 
                 <div class="bottom-A-link">
                   <a href="#">
-                    <img src="./Icons/linkedin-svgrepo-com.svg" alt=""
-                  /></a>
-                  <a href="#"
-                    ><img
+                    <!-- <img src="./Icons/linkedin-svgrepo-com.svg" alt=""
+                  /> -->
+                    <svg>
+                      <use href="./Icons/icons.svg#LinkedIn"></use>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <!-- <img
                       src="./Icons/github-142-svgrepo-com (1).svg"
                       alt="Github"
-                  /></a>
-                  <a href="#"
-                    ><img src="./Icons/icons8-x-logo.svg" alt="twitter(x)"
-                  /></a>
+                  /> -->
+
+                    <svg>
+                      <use href="./Icons/icons.svg#Github"></use>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <!-- <img src="./Icons/icons8-x-logo.svg" alt="twitter(x)"
+                    /> -->
+
+                    <svg>
+                      <use href="./Icons/icons.svg#Twitter"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -151,48 +189,62 @@
           </div>
         </a>
 
-        <a class="contact-link" href="#">
-          <img
-            class="contact"
-            src="./Icons/contact-phone-talking-svgrepo-com.svg"
-            alt="contact"
-          />
-        </a>
-
         <ul>
           <li>
             <a href="./projects.html">
-              <img src="./Icons/portfolio-svgrepo-com.svg" alt="Portfolio" />
+              <!-- <img src="./Icons/portfolio-svgrepo-com.svg" alt="Portfolio" /> -->
+              <svg class="portfolio">
+                <use href="./Icons/icons.svg#portfolio"></use>
+              </svg>
+
               <span>Portfolio</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./Icons/services-svgrepo-com.svg" alt="Services" />
+              <!-- <img src="./Icons/services-svgrepo-com.svg" alt="Services" /> -->
+
+              <svg>
+                <use href="./Icons/icons.svg#Services"></use>
+              </svg>
               <span>Services</span>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <img
+              <!-- <img
                 src="./Icons/contact-phone-talking-svgrepo-com.svg"
                 alt="Contact"
-              />
+              /> -->
+              <svg>
+                <use href="./Icons/icons.svg#contact-phone"></use>
+              </svg>
               <span>Let's Talk</span>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <img
+              <!-- <img
                 src="./Icons/schedule-calendar-svgrepo-com.svg"
                 alt="Schedule"
-              />
+              /> -->
+
+              <svg>
+                <use href="./Icons/icons.svg#Schedule"></use>
+              </svg>
               <span>Schedule</span>
             </a>
           </li>
+
+          <li></li>
         </ul>
+        <button>
+          <svg class="dark_light_mode">
+            <use href="./Icons/icons.svg#dark_light_mode"></use>
+          </svg>
+        </button>
       </nav>
     </header>
 
@@ -207,32 +259,60 @@
 
           <div class="skills">
             <div>
-              <img src="./Icons/js02-svgrepo-com.svg" alt="JavaScript" />
+              <!-- <img src="./Icons/js02-svgrepo-com.svg" alt="JavaScript" /> -->
+
+              <svg>
+                <use href="./Icons/icons.svg#JavaScript"></use>
+              </svg>
               <span>JavaScript</span>
             </div>
 
             <div>
-              <img src="./Icons/react-svgrepo-com.svg" alt="React" />
+              <!-- <img src="./Icons/react-svgrepo-com.svg" alt="React" /> -->
+
+              <svg>
+                <use href="./Icons/icons.svg#React"></use>
+              </svg>
               <span>React</span>
             </div>
 
             <div>
-              <img src="./Icons/nodejs-svgrepo-com.svg" alt="NodeJs" />
+              <!-- <img src="./Icons/nodejs-svgrepo-com.svg" alt="NodeJs" /> -->
+              <svg
+                class="NodeJS"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>nodejs</title>
+                <rect width="24" height="24" fill="none" />
+                <path
+                  d="M12,1.85a1.62,1.62,0,0,0-.78.2L3.78,6.35A1.58,1.58,0,0,0,3,7.71v8.58a1.58,1.58,0,0,0,.78,1.36l2,1.12a3.24,3.24,0,0,0,1.71.47,2.07,2.07,0,0,0,2.21-2.33V8.44a.22.22,0,0,0-.22-.22H8.5a.22.22,0,0,0-.23.22v8.47c0,.66-.68,1.31-1.77.76l-2-1.17a.26.26,0,0,1-.11-.21V7.71a.24.24,0,0,1,.11-.21l7.44-4.29a.22.22,0,0,1,.22,0L19.55,7.5a.24.24,0,0,1,.11.21v8.58a.26.26,0,0,1-.11.21l-7.44,4.29a.24.24,0,0,1-.23,0L10,19.65a.26.26,0,0,0-.21,0,4.22,4.22,0,0,1-1.12.51c-.12,0-.31.11.07.32l2.48,1.47a1.55,1.55,0,0,0,1.56,0l7.44-4.29A1.58,1.58,0,0,0,21,16.29V7.71a1.58,1.58,0,0,0-.78-1.36l-7.44-4.3a1.59,1.59,0,0,0-.78-.2M14,8c-2.12,0-3.39.89-3.39,2.39s1.26,2.08,3.3,2.28c2.43.24,2.62.6,2.62,1.08,0,.83-.67,1.18-2.23,1.18-2,0-2.4-.49-2.55-1.47a.23.23,0,0,0-.22-.18h-1a.21.21,0,0,0-.21.22c0,1.24.68,2.74,3.94,2.74,2.35,0,3.7-.93,3.7-2.55s-1.08-2-3.37-2.34-2.54-.46-2.54-1,.2-1,1.91-1c1.5,0,2.09.33,2.32,1.36a.21.21,0,0,0,.21.17h1a.19.19,0,0,0,.15-.07.16.16,0,0,0,.05-.16C17.56,8.82,16.38,8,14,8Z"
+                />
+              </svg>
               <span>NodeJS</span>
             </div>
 
             <div>
-              <img src="./Icons/html5-logo-svgrepo-com.svg" alt="html" />
+              <!-- <img src="./Icons/html5-logo-svgrepo-com.svg" alt="html" /> -->
+              <svg>
+                <use href="./Icons/icons.svg#HTML"></use>
+              </svg>
               <span>HTML</span>
             </div>
 
             <div>
-              <img src="./Icons/css-svgrepo-com.svg" alt="css" />
+              <!-- <img src="./Icons/css-svgrepo-com.svg" alt="css" /> -->
+              <svg>
+                <use href="./Icons/icons.svg#CSS"></use>
+              </svg>
               <span>CSS</span>
             </div>
 
             <div>
-              <img src="./Icons/git-svgrepo-com.svg" alt="" />
+              <!-- <img src="./Icons/git-svgrepo-com.svg" alt="" /> -->
+              <svg>
+                <use href="./Icons/icons.svg#GIT"></use>
+              </svg>
               <span>GIT</span>
             </div>
           </div>
@@ -240,11 +320,17 @@
 
         <div>
           <a class="project-link" href="./projects.html">
-            <img src="./Icons/portfolio-svgrepo-com.svg" alt="" />
+            <!-- <img src="./Icons/portfolio-svgrepo-com.svg" alt="" /> -->
+            <svg class="portfolio">
+              <use href="./Icons/icons.svg#portfolio"></use>
+            </svg>
             <span>View Projects</span>
           </a>
           <a href="#">
-            <img src="./Icons/contact-phone-talking-svgrepo-com.svg" alt="" />
+            <!-- <img src="./Icons/contact-phone-talking-svgrepo-com.svg" alt="" /> -->
+            <svg>
+              <use href="./Icons/icons.svg#contact-phone"></use>
+            </svg>
             <span>Contact Me</span>
           </a>
         </div>
@@ -292,23 +378,34 @@
                 <ul class="socials">
                   <li>
                     <a class="title-link" href="#">
-                      <img
+                      <!-- <img
                         src="./Icons/github-142-svgrepo-com (1).svg"
                         alt="github"
-                      />
+                      /> -->
+                      <svg>
+                        <use href="./Icons/icons.svg#Github"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a class="title-link" href="#">
-                      <img
+                      <!-- <img
                         src="./Icons/linkedin-svgrepo-com.svg"
                         alt="linkedin"
-                      />
+                      /> -->
+
+                      <svg>
+                        <use href="./Icons/icons.svg#LinkedIn"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a class="title-link" href="#">
-                      <img src="./Icons/icons8-x-logo.svg" alt="X" />
+                      <!-- <img src="./Icons/icons8-x-logo.svg" alt="X" /> -->
+
+                      <svg>
+                        <use href="./Icons/icons.svg#Twitter"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -318,29 +415,41 @@
             <div>
               <h2>Quick Links</h2>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/portfolio-svgrepo-com.svg" alt="Portfolio" />
+              <a class="quick-link" href="#">
+                <!-- <img src="./Icons/portfolio-svgrepo-com.svg" alt="Portfolio" /> -->
+                <svg class="porfolio">
+                  <use href="./Icons/icons.svg#portfolio"></use>
+                </svg>
                 <span> Portfolio </span>
               </a>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/services-svgrepo-com.svg" alt="Services" />
+              <a class="quick-link" href="#">
+                <!-- <img src="./Icons/services-svgrepo-com.svg" alt="Services" /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#Services"></use>
+                </svg>
                 <span> Services </span>
               </a>
 
-              <a class="quick-link" href="#"
-                ><img
+              <a class="quick-link" href="#">
+                <!-- <img
                   src="./Icons/contact-phone-talking-svgrepo-com.svg"
                   alt="Let's Talk"
-                />
+                /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#contact-phone"></use>
+                </svg>
                 <span> Let's Talk </span>
               </a>
 
-              <a class="quick-link" href="#"
-                ><img
+              <a class="quick-link" href="#">
+                <!-- <img
                   src="./Icons/schedule-calendar-svgrepo-com.svg"
                   alt="Schedule Meeting"
-                />
+                /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#Schedule"></use>
+                </svg>
                 <span> Schedule Meeting </span>
               </a>
             </div>
@@ -350,35 +459,47 @@
             <div>
               <h2>Additional Services</h2>
 
-              <a class="quick-link" href="#"
-                ><img
+              <a class="quick-link" href="#">
+                <!-- <img
                   src="./Icons/review-screen-svgrepo-com.svg"
                   alt="Code Review"
-                />
+                /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#Review"></use>
+                </svg>
                 <span> Code Review </span>
               </a>
 
-              <a class="quick-link" href="#"
-                ><img
+              <a class="quick-link" href="#">
+                <!-- <img
                   src="./Icons/graphic-page-svgrepo-com.svg"
                   alt="Graphics Design"
-                />
+                /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#Graphics"></use>
+                </svg>
                 <span> Graphics Design </span>
               </a>
 
-              <a class="quick-link" href="#"
-                ><img
+              <a class="quick-link" href="#">
+                <!-- <img
                   src="./Icons/guide-human-svgrepo-com.svg"
                   alt="Mentorship"
-                />
+                /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#Mentor"></use>
+                </svg>
                 <span> Mentorship</span>
               </a>
 
-              <a class="quick-link" href="#"
-                ><img
+              <a class="quick-link" href="#">
+                <!-- <img
                   src="./Icons/talk-confer-consult-speak-svgrepo-com.svg"
                   alt="Technical Consultation"
-                />
+                /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#Talk-confer"></use>
+                </svg>
                 <span> Technical Consultation </span>
               </a>
             </div>
@@ -386,33 +507,77 @@
             <div>
               <h2>Contacts</h2>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/email-1564-svgrepo-com.svg" alt="email" />
+              <a class="quick-link" href="#">
+                <!-- <img src="./Icons/email-1564-svgrepo-com.svg" alt="email" /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#email"></use>
+                </svg>
                 <span> edimjpaul@gmail.com </span>
               </a>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/location-svgrepo-com.svg" alt="location" />
+              <a class="quick-link" href="#">
+                <!-- <img src="./Icons/location-svgrepo-com.svg" alt="location" /> -->
+                <svg
+                  viewBox="-4 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                >
+                  <title>location</title>
+                  <desc>Created with Sketch Beta.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                    sketch:type="MSPage"
+                  >
+                    <g
+                      class="Location"
+                      id="Icon-Set"
+                      sketch:type="MSLayerGroup"
+                      transform="translate(-104.000000, -411.000000)"
+                    >
+                      <path
+                        d="M116,426 C114.343,426 113,424.657 113,423 C113,421.343 114.343,420 116,420 C117.657,420 119,421.343 119,423 C119,424.657 117.657,426 116,426 L116,426 Z M116,418 C113.239,418 111,420.238 111,423 C111,425.762 113.239,428 116,428 C118.761,428 121,425.762 121,423 C121,420.238 118.761,418 116,418 L116,418 Z M116,440 C114.337,440.009 106,427.181 106,423 C106,417.478 110.477,413 116,413 C121.523,413 126,417.478 126,423 C126,427.125 117.637,440.009 116,440 L116,440 Z M116,411 C109.373,411 104,416.373 104,423 C104,428.018 114.005,443.011 116,443 C117.964,443.011 128,427.95 128,423 C128,416.373 122.627,411 116,411 L116,411 Z"
+                        id="location"
+                        sketch:type="MSShapeGroup"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
                 <span>
                   Lagos, Nigeria <br />
                   Timezone:WAT (GMT+1)</span
                 >
               </a>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/linkedin-svgrepo-com.svg" alt="Linkedin" />
-                <span> Linkedin</span>
+              <a class="quick-link" href="#">
+                <!-- <img src="./Icons/linkedin-svgrepo-com.svg" alt="Linkedin" /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#LinkedIn"></use>
+                </svg>
+                <span> LinkedIn</span>
               </a>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/icons8-x-logo.svg" alt="Twitter(X)" />
+              <a class="quick-link" href="#">
+                <!-- <img src="./Icons/icons8-x-logo.svg" alt="Twitter(X)" /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#Twitter"></use>
+                </svg>
                 <span> X(Twitter) </span>
               </a>
-              <a class="quick-link" href="#"
-                ><img
+              <a class="quick-link" href="#">
+                <!-- <img
                   src="./Icons/github-142-svgrepo-com (1).svg"
                   alt="github"
-                />
+                /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#Github"></use>
+                </svg>
                 <span> Github </span>
               </a>
             </div>

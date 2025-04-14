@@ -44,8 +44,13 @@ footer div.footer-content > * {
   margin-top: 2rem;
   flex-wrap: wrap;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
+/* footer div.footer-content > * :nth-child(n + 2),
+footer div.footer-content > * :nth-child(n + 4) {
+  margin: 0 auto;
+} */
 
 footer div.footer-content > * > * {
   display: flex;
@@ -134,16 +139,26 @@ footer ul.socials {
   gap: 2.5rem;
 }
 
-footer ul li img,
+/* footer ul li img,
 footer a.quick-link img {
   height: 1.3rem;
   width: 1.3rem;
-}
+} */
 
 footer a.quick-link {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+}
+
+footer a.quick-link svg.porfolio {
+  fill: none;
+  stroke: rgb(95, 47, 71);
+  stroke-width: 3;
+}
+
+footer a.quick-link svg g.Location {
+  fill: rgb(95, 47, 71);
 }
 
 footer :where(.my-name, .copyright) {
@@ -220,5 +235,9 @@ footer .copyright {
     font-weight: 300;
     /* color: rgb(255, 223, 128); */
     /* padding-right: 0.6rem; */
+  }
+
+  footer div.footer-content > * {
+    justify-content: space-between;
   }
 }
