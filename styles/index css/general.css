@@ -7,6 +7,16 @@
   box-sizing: border-box;
 }
 
+body div.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html main {
+  flex: 1;
+}
+
 html,
 body,
 aside {
@@ -83,6 +93,7 @@ html.dark-mode aside div.aside-links {
 
 html.dark-mode footer {
   background: rgb(37, 37, 41);
+  /* margin-top: auto; */
 }
 
 html main div.skills div {
@@ -102,10 +113,14 @@ body {
   flex-direction: column;
 }
 
-header,
+/* header,
 main,
 footer {
   flex: 1;
+} */
+
+footer {
+  margin-top: auto;
 }
 
 html nav div span.first-name,

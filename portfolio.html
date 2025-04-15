@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-mode">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -11,397 +11,515 @@
     <link rel="stylesheet" href="./styles/index css/mySkills.css" />
     <link rel="stylesheet" href="./styles/index css/footer.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=enterprise"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=calendar_today"
-    />
-
     <script src="./hamburger.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <nav>
-        <img
+    <div class="wrapper">
+      <header>
+        <nav>
+          <!-- <img
           class="hamburger"
           src="./Icons/hamburger-menu.svg"
           alt="hamburger-menu"
-        />
+        /> -->
 
-        <div class="sbc-guard"></div>
-        <aside class="side-bar">
-          <div class="side-bar-child">
-            <div class="title">
-              <div class="span-grand-parent">
-                <div class="span-parent">
-                  <span class="curly-brace"> { </span>
-                  <span class="first-name">Edim</span>
-                  <span class="other-name">J Paul</span>
-                  <span class="curly-brace">}</span>
+          <svg class="hamburger">
+            <use href="./Icons/icons.svg#hamburger"></use>
+          </svg>
+
+          <div class="sbc-guard"></div>
+          <aside class="side-bar">
+            <div class="side-bar-child">
+              <div class="title">
+                <div class="span-grand-parent">
+                  <div class="span-parent">
+                    <span class="curly-brace"> { </span>
+                    <span class="first-name">Edim</span>
+                    <span class="other-name">J Paul</span>
+                    <span class="curly-brace">}</span>
+                  </div>
                 </div>
+                <div class="cancel"><span>X</span></div>
               </div>
-              <div class="cancel"><span>X</span></div>
-            </div>
 
-            <div class="side-bar-info">
-              <div class="Available-div">
-                <span class="Available">Available for Work</span>
-                <span>Flexible</span>
-              </div>
-              <div class="aside-links">
-                <div>
-                  <a href="#">
-                    <img
+              <div class="side-bar-info">
+                <div class="Available-div">
+                  <span class="Available">Available for Work</span>
+                  <span>Flexible</span>
+                </div>
+                <div class="aside-links">
+                  <div>
+                    <a href="#">
+                      <!-- <img
                       src="./Icons/portfolio-svgrepo-com.svg"
                       alt="Portfolio"
-                    />
+                    /> -->
 
-                    <div class="link-parent">
-                      <div class="link-title">Portfolio</div>
-                      <div class="link-description">
-                        Check out my Portfolio to explore my technical skills
-                        and projects.
+                      <svg>
+                        <use href="./Icons/icons.svg#portfolio"></use>
+                      </svg>
+
+                      <div class="link-parent">
+                        <div class="link-title">Portfolio</div>
+                        <div class="link-description">
+                          Check out my Portfolio to explore my technical skills
+                          and projects.
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <!-- <img
                       src="./Icons/services-svgrepo-com.svg"
                       alt="services"
-                    />
+                    /> -->
 
-                    <div class="link-parent">
-                      <div class="link-title">Services</div>
-                      <div class="link-description">
-                        Comprehensive Software Development Consulting and Expert
-                        Solutions for Tailored Business Growth.
+                      <svg>
+                        <use href="./Icons/icons.svg#Services"></use>
+                      </svg>
+
+                      <div class="link-parent">
+                        <div class="link-title">Services</div>
+                        <div class="link-description">
+                          Comprehensive Software Development Consulting and
+                          Expert Solutions for Tailored Business Growth.
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <!-- <img
                       src="./Icons/contact-phone-talking-svgrepo-com.svg"
                       alt="Let's Talk"
-                    />
+                    /> -->
 
-                    <div class="link-parent">
-                      <div class="link-title">Let's Talk</div>
-                      <div class="link-description">
-                        Start a conversation with us for quick support and
-                        answers.
+                      <svg>
+                        <use href="./Icons/icons.svg#contact-phone"></use>
+                      </svg>
+
+                      <div class="link-parent">
+                        <div class="link-title">Let's Talk</div>
+                        <div class="link-description">
+                          Start a conversation with us for quick support and
+                          answers.
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <!-- <img
                       src="./Icons/schedule-calendar-svgrepo-com.svg"
                       alt="Schedule"
-                    />
+                    /> -->
 
-                    <div class="link-parent">
-                      <div class="link-title">Schedule</div>
-                      <div class="link-description">
-                        Find a convenient time and schedule your appointment
-                        now.
+                      <svg>
+                        <use href="./Icons/icons.svg#Schedule"></use>
+                      </svg>
+
+                      <div class="link-parent">
+                        <div class="link-title">Schedule</div>
+                        <div class="link-description">
+                          Find a convenient time and schedule your appointment
+                          now.
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img src="./Icons/profile-svgrepo-com.svg" alt="Schedule" />
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <!-- <img src="./Icons/profile-svgrepo-com.svg" alt="Schedule" /> -->
 
-                    <div class="link-parent">
-                      <div class="link-title">Meet Me</div>
-                      <div class="link-description">
-                        Curious about me? This is where you’ll find out.
+                      <svg>
+                        <use href="./Icons/icons.svg#Meet_Me"></use>
+                      </svg>
+
+                      <div class="link-parent">
+                        <div class="link-title">Meet Me</div>
+                        <div class="link-description">
+                          Curious about me? This is where you’ll find out.
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
+                    </a>
+                  </div>
 
-                <div class="bottom-A-link">
-                  <a href="#">
-                    <img src="./Icons/linkedin-svgrepo-com.svg" alt=""
-                  /></a>
-                  <a href="#"
-                    ><img
+                  <div class="bottom-A-link">
+                    <a href="#">
+                      <!-- <img src="./Icons/linkedin-svgrepo-com.svg" alt=""
+                  /> -->
+                      <svg>
+                        <use href="./Icons/icons.svg#LinkedIn"></use>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <!-- <img
                       src="./Icons/github-142-svgrepo-com (1).svg"
                       alt="Github"
-                  /></a>
-                  <a href="#"
-                    ><img src="./Icons/icons8-x-logo.svg" alt="twitter(x)"
-                  /></a>
+                  /> -->
+
+                      <svg>
+                        <use href="./Icons/icons.svg#Github"></use>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <!-- <img src="./Icons/icons8-x-logo.svg" alt="twitter(x)"
+                    /> -->
+
+                      <svg>
+                        <use href="./Icons/icons.svg#Twitter"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </aside>
+          </aside>
 
-        <a href="./index.html">
-          <div class="title">
-            <span class="curly-brace">{</span>
-            <div>
-              <span class="first-name">Edim</span>
-              <span class="other-name">J Paul</span>
+          <a href="./index.html">
+            <div class="title">
+              <span class="curly-brace">{</span>
+              <div>
+                <span class="first-name">Edim</span>
+                <span class="other-name">J Paul</span>
+              </div>
+              <span class="curly-brace">}</span>
+              <span class="name-title">Software Engineer 𓃶</span>
             </div>
-            <span class="curly-brace">}</span>
-            <span class="name-title">Software Engineer 𓃶</span>
-          </div>
-        </a>
+          </a>
 
-        <a class="contact-link" href="#">
-          <img
-            class="contact"
-            src="./Icons/contact-phone-talking-svgrepo-com.svg"
-            alt="contact"
-          />
-        </a>
+          <ul>
+            <li>
+              <a href="./portfolio.html">
+                <!-- <img src="./Icons/portfolio-svgrepo-com.svg" alt="Portfolio" /> -->
+                <svg class="portfolio">
+                  <use href="./Icons/icons.svg#portfolio"></use>
+                </svg>
 
-        <ul>
-          <li>
-            <a href="./projects.html">
-              <img src="./Icons/portfolio-svgrepo-com.svg" alt="Portfolio" />
-              <span>Portfolio</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./Icons/services-svgrepo-com.svg" alt="Services" />
-              <span>Services</span>
-            </a>
-          </li>
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- <img src="./Icons/services-svgrepo-com.svg" alt="Services" /> -->
 
-          <li>
-            <a href="#">
-              <img
+                <svg>
+                  <use href="./Icons/icons.svg#Services"></use>
+                </svg>
+                <span>Services</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <!-- <img
                 src="./Icons/contact-phone-talking-svgrepo-com.svg"
                 alt="Contact"
-              />
-              <span>Let's Talk</span>
-            </a>
-          </li>
+              /> -->
+                <svg>
+                  <use href="./Icons/icons.svg#contact-phone"></use>
+                </svg>
+                <span>Let's Talk</span>
+              </a>
+            </li>
 
-          <li>
-            <a href="#">
-              <img
+            <li>
+              <a href="#">
+                <!-- <img
                 src="./Icons/schedule-calendar-svgrepo-com.svg"
                 alt="Schedule"
-              />
-              <span>Schedule</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+              /> -->
 
-    <main>
-      <div>
-        <i class="material-symbols-outlined">enterprise</i>
-        <span>Portfolio Showcase</span>
-      </div>
-      <div>
-        <div>Transforming Ideas into Digital Excellence</div>
-
-        <div>
-          Explore my Porfolio of successful projects. Each with its unique
-          challenge solved through innovation and technical expertise.
-        </div>
-
-        <div>
-          <span>Discuss Your Project</span>
-          <span class="material-symbols-outlined">call</span>
-        </div>
-
-        <div>
-          <span>Schedule a Call</span>
-          <span class="material-symbols-outlined">schedule</span>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div>
-        <div class="footer-content">
-          <div>
-            <div>
-              <a class="title-link" href="./index.html">
-                <div class="title">
-                  <span class="span-grand-parent">
-                    <span class="span-parent">
-                      <span class="curly-brace"> { </span>
-                      <span class="first-name">Edim</span>
-                      <span class="other-name">J Paul</span>
-                      <span class="curly-brace">}</span>
-                    </span>
-                  </span>
-                </div>
+                <svg>
+                  <use href="./Icons/icons.svg#Schedule"></use>
+                </svg>
+                <span>Schedule</span>
               </a>
+            </li>
 
-              <p class="more-me">
-                Experienced Software Engineer specializing in scalable
-                enterprise solutions. Proven track record of delivering
-                high-performance software that drives business growth and
-                exceeds client expectations.
-              </p>
+            <li></li>
+          </ul>
+          <button>
+            <svg class="dark_light_mode">
+              <use href="./Icons/icons.svg#dark_light_mode"></use>
+            </svg>
+          </button>
+        </nav>
+      </header>
 
-              <div class="availabilty">
-                <span class="afw">Available for Work</span>
-                <span>Flexible</span>
+      <main>
+        <div>
+          <i class="material-symbols-outlined">enterprise</i>
+          <span>Portfolio Showcase</span>
+        </div>
+        <div>
+          <div>Transforming Ideas into Digital Excellence</div>
+
+          <div>
+            Explore my Porfolio of successful projects. Each with its unique
+            challenge solved through innovation and technical expertise.
+          </div>
+
+          <div>
+            <span>Discuss Your Project</span>
+            <span class="material-symbols-outlined">call</span>
+          </div>
+
+          <div>
+            <span>Schedule a Call</span>
+            <span class="material-symbols-outlined">schedule</span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <div class="footer-content">
+            <div>
+              <div>
+                <a class="title-link" href="./index.html">
+                  <div class="title">
+                    <span class="span-grand-parent">
+                      <span class="span-parent">
+                        <span class="curly-brace"> { </span>
+                        <span class="first-name">Edim</span>
+                        <span class="other-name">J Paul</span>
+                        <span class="curly-brace">}</span>
+                      </span>
+                    </span>
+                  </div>
+                </a>
+
+                <p class="more-me">
+                  Experienced Software Engineer specializing in scalable
+                  enterprise solutions. Proven track record of delivering
+                  high-performance software that drives business growth and
+                  exceeds client expectations.
+                </p>
+
+                <div class="availabilty">
+                  <span class="afw">Available for Work</span>
+                  <span>Flexible</span>
+                </div>
+
+                <div>
+                  <ul class="socials">
+                    <li>
+                      <a class="title-link" href="#">
+                        <!-- <img
+                        src="./Icons/github-142-svgrepo-com (1).svg"
+                        alt="github"
+                      /> -->
+                        <svg>
+                          <use href="./Icons/icons.svg#Github"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="title-link" href="#">
+                        <!-- <img
+                        src="./Icons/linkedin-svgrepo-com.svg"
+                        alt="linkedin"
+                      /> -->
+
+                        <svg>
+                          <use href="./Icons/icons.svg#LinkedIn"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="title-link" href="#">
+                        <!-- <img src="./Icons/icons8-x-logo.svg" alt="X" /> -->
+
+                        <svg>
+                          <use href="./Icons/icons.svg#Twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div>
-                <ul class="socials">
-                  <li>
-                    <a class="title-link" href="#">
-                      <img
-                        src="./Icons/github-142-svgrepo-com (1).svg"
-                        alt="github"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a class="title-link" href="#">
-                      <img
-                        src="./Icons/linkedin-svgrepo-com.svg"
-                        alt="linkedin"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a class="title-link" href="#">
-                      <img src="./Icons/icons8-x-logo.svg" alt="X" />
-                    </a>
-                  </li>
-                </ul>
+                <h2>Quick Links</h2>
+
+                <a class="quick-link" href="#">
+                  <!-- <img src="./Icons/portfolio-svgrepo-com.svg" alt="Portfolio" /> -->
+                  <svg class="porfolio">
+                    <use href="./Icons/icons.svg#portfolio"></use>
+                  </svg>
+                  <span> Portfolio </span>
+                </a>
+
+                <a class="quick-link" href="#">
+                  <!-- <img src="./Icons/services-svgrepo-com.svg" alt="Services" /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#Services"></use>
+                  </svg>
+                  <span> Services </span>
+                </a>
+
+                <a class="quick-link" href="#">
+                  <!-- <img
+                  src="./Icons/contact-phone-talking-svgrepo-com.svg"
+                  alt="Let's Talk"
+                /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#contact-phone"></use>
+                  </svg>
+                  <span> Let's Talk </span>
+                </a>
+
+                <a class="quick-link" href="#">
+                  <!-- <img
+                  src="./Icons/schedule-calendar-svgrepo-com.svg"
+                  alt="Schedule Meeting"
+                /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#Schedule"></use>
+                  </svg>
+                  <span> Schedule Meeting </span>
+                </a>
               </div>
             </div>
 
             <div>
-              <h2>Quick Links</h2>
+              <div>
+                <h2>Additional Services</h2>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/portfolio-svgrepo-com.svg" alt="Portfolio" />
-                <span> Portfolio </span>
-              </a>
-
-              <a class="quick-link" href="#"
-                ><img src="./Icons/services-svgrepo-com.svg" alt="Services" />
-                <span> Services </span>
-              </a>
-
-              <a class="quick-link" href="#"
-                ><img
-                  src="./Icons/contact-phone-talking-svgrepo-com.svg"
-                  alt="Let's Talk"
-                />
-                <span> Let's Talk </span>
-              </a>
-
-              <a class="quick-link" href="#"
-                ><img
-                  src="./Icons/schedule-calendar-svgrepo-com.svg"
-                  alt="Schedule Meeting"
-                />
-                <span> Schedule Meeting </span>
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <h2>Additional Services</h2>
-
-              <a class="quick-link" href="#"
-                ><img
+                <a class="quick-link" href="#">
+                  <!-- <img
                   src="./Icons/review-screen-svgrepo-com.svg"
                   alt="Code Review"
-                />
-                <span> Code Review </span>
-              </a>
+                /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#Review"></use>
+                  </svg>
+                  <span> Code Review </span>
+                </a>
 
-              <a class="quick-link" href="#"
-                ><img
+                <a class="quick-link" href="#">
+                  <!-- <img
                   src="./Icons/graphic-page-svgrepo-com.svg"
                   alt="Graphics Design"
-                />
-                <span> Graphics Design </span>
-              </a>
+                /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#Graphics"></use>
+                  </svg>
+                  <span> Graphics Design </span>
+                </a>
 
-              <a class="quick-link" href="#"
-                ><img
+                <a class="quick-link" href="#">
+                  <!-- <img
                   src="./Icons/guide-human-svgrepo-com.svg"
                   alt="Mentorship"
-                />
-                <span> Mentorship</span>
-              </a>
+                /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#Mentor"></use>
+                  </svg>
+                  <span> Mentorship</span>
+                </a>
 
-              <a class="quick-link" href="#"
-                ><img
+                <a class="quick-link" href="#">
+                  <!-- <img
                   src="./Icons/talk-confer-consult-speak-svgrepo-com.svg"
                   alt="Technical Consultation"
-                />
-                <span> Technical Consultation </span>
-              </a>
-            </div>
+                /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#Talk-confer"></use>
+                  </svg>
+                  <span> Technical Consultation </span>
+                </a>
+              </div>
 
-            <div>
-              <h2>Contacts</h2>
+              <div>
+                <h2>Contacts</h2>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/email-1564-svgrepo-com.svg" alt="email" />
-                <span> edimjpaul@gmail.com </span>
-              </a>
+                <a class="quick-link" href="#">
+                  <!-- <img src="./Icons/email-1564-svgrepo-com.svg" alt="email" /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#email"></use>
+                  </svg>
+                  <span> edimjpaul@gmail.com </span>
+                </a>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/location-svgrepo-com.svg" alt="location" />
-                <span>
-                  Lagos, Nigeria <br />
-                  Timezone:WAT (GMT+1)</span
-                >
-              </a>
+                <a class="quick-link" href="#">
+                  <!-- <img src="./Icons/location-svgrepo-com.svg" alt="location" /> -->
+                  <svg
+                    viewBox="-4 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                  >
+                    <title>location</title>
+                    <desc>Created with Sketch Beta.</desc>
+                    <defs></defs>
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                      sketch:type="MSPage"
+                    >
+                      <g
+                        class="Location"
+                        id="Icon-Set"
+                        sketch:type="MSLayerGroup"
+                        transform="translate(-104.000000, -411.000000)"
+                      >
+                        <path
+                          d="M116,426 C114.343,426 113,424.657 113,423 C113,421.343 114.343,420 116,420 C117.657,420 119,421.343 119,423 C119,424.657 117.657,426 116,426 L116,426 Z M116,418 C113.239,418 111,420.238 111,423 C111,425.762 113.239,428 116,428 C118.761,428 121,425.762 121,423 C121,420.238 118.761,418 116,418 L116,418 Z M116,440 C114.337,440.009 106,427.181 106,423 C106,417.478 110.477,413 116,413 C121.523,413 126,417.478 126,423 C126,427.125 117.637,440.009 116,440 L116,440 Z M116,411 C109.373,411 104,416.373 104,423 C104,428.018 114.005,443.011 116,443 C117.964,443.011 128,427.95 128,423 C128,416.373 122.627,411 116,411 L116,411 Z"
+                          id="location"
+                          sketch:type="MSShapeGroup"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>
+                    Lagos, Nigeria <br />
+                    Timezone:WAT (GMT+1)</span
+                  >
+                </a>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/linkedin-svgrepo-com.svg" alt="Linkedin" />
-                <span> Linkedin</span>
-              </a>
+                <a class="quick-link" href="#">
+                  <!-- <img src="./Icons/linkedin-svgrepo-com.svg" alt="Linkedin" /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#LinkedIn"></use>
+                  </svg>
+                  <span> LinkedIn</span>
+                </a>
 
-              <a class="quick-link" href="#"
-                ><img src="./Icons/icons8-x-logo.svg" alt="Twitter(X)" />
-                <span> X(Twitter) </span>
-              </a>
-              <a class="quick-link" href="#"
-                ><img
+                <a class="quick-link" href="#">
+                  <!-- <img src="./Icons/icons8-x-logo.svg" alt="Twitter(X)" /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#Twitter"></use>
+                  </svg>
+                  <span> X(Twitter) </span>
+                </a>
+                <a class="quick-link" href="#">
+                  <!-- <img
                   src="./Icons/github-142-svgrepo-com (1).svg"
                   alt="github"
-                />
-                <span> Github </span>
-              </a>
+                /> -->
+                  <svg>
+                    <use href="./Icons/icons.svg#Github"></use>
+                  </svg>
+                  <span> Github </span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="copy">
-          <span class="my-name">EDIM J PAUL𓃶 </span>
-          <span class="copyright">&copy; All Rights Reserved 2025 </span>
+          <div class="copy">
+            <span class="my-name">EDIM J PAUL𓃶 </span>
+            <span class="copyright">&copy; All Rights Reserved 2025 </span>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

@@ -122,11 +122,6 @@ main div.main-writeup-div > :last-child a.project-link {
   );
 }
 
-/* main div.main-writeup-div > :last-child a img {
-  height: 2rem;
-  width: 2rem;
-} */
-
 main div.main-writeup-div > :last-child a svg {
   height: 2rem;
   height: 2rem;
@@ -161,9 +156,6 @@ main div img.profile-pic {
   padding-top: 20px;
   padding-bottom: 20px;
   mix-blend-mode: luminosity;
-  /* box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4); */
-
-  /* margin-right: 50px; */
 }
 
 @keyframes bounce {
