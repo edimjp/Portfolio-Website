@@ -23,18 +23,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Dark/Light Mode
   function light_dark_mode() {
+    console.log("Dark mode toggled");
     htmlTag.classList.toggle("dark-mode");
   }
 
   // Event listeners
   hamburger.addEventListener("click", openSideBar);
   sideBarCancel.addEventListener("click", closeSideBar);
-
   sideBarCancel.addEventListener("click", closeSideBar);
-
   sideBarOverlay.addEventListener("click", closeSideBar);
 
   light_dark_Button.addEventListener("click", light_dark_mode);
+  light_dark_Button.addEventListener("touchend", (event) => {
+    event.preventDefault();
+    light_dark_mode();
+  });
 
   //Prevent overlay click when inside the sidebar
 
@@ -43,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //   console.log("Inside the side bar");
   // });
 
+  /*
   // Swipe gesture detection
   let touchStartX = 0;
   let touchEndX = 0;
@@ -53,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("touchmove", (e) => {
+    console.log(e.changedTouches);
     touchEndX = e.changedTouches[0].clientX;
   });
 
@@ -66,4 +71,5 @@ document.addEventListener("DOMContentLoaded", () => {
       closeSideBar();
     }
   });
+  */
 });

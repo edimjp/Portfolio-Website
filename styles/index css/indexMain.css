@@ -145,10 +145,10 @@ main > :last-child {
   width: 250px;
   height: 330px;
   border-radius: 50%; */
-  animation: bounce 4s linear infinite forwards;
 }
 
 main div img.profile-pic {
+  animation: bounce 4s linear infinite forwards;
   max-height: 350px;
   max-width: 350px;
   border-radius: 50%;
