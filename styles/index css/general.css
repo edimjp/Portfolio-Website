@@ -148,7 +148,8 @@ html nav a.mode-link svg {
 html.dark-mode svg,
 html.dark-mode footer a.quick-link svg g.Location,
 html.dark-mode nav a.mode-link svg {
-  fill: rgb(91, 47, 71);
+  /* fill: rgb(91, 47, 71); */
+  fill: rgb(136, 65, 101);
   height: 1.3rem;
   width: 1.3rem;
 }
