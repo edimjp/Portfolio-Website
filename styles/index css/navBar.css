@@ -331,6 +331,7 @@ nav ul {
   margin-left: auto;
   /* padding-right: 2rem; */
   gap: 2rem;
+  margin-right: 1rem;
 }
 
 nav ul li a {
@@ -395,7 +396,7 @@ nav ul svg.dark_light_mode {
   width: 1.5rem;
 }
 
-@media screen and (max-width: 1082px) {
+@media screen and (max-width: 1250px) {
   nav {
     justify-content: space-between;
   }
