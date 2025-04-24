@@ -1,0 +1,293 @@
+html.dark-mode nav ul li a.services {
+  display: flex;
+  align-self: center;
+  /* justify-content: center; */
+  gap: 1rem;
+  text-decoration: none;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.2rem;
+  /* transition: transform 0.3s ease-in-out; */
+  background: linear-gradient(
+    120deg,
+    rgba(166, 77, 122, 0.8),
+    rgba(255, 223, 128, 0.8)
+  );
+  box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
+  transform: scale(1.05, 1.02);
+}
+
+nav ul li a.services {
+  background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
+  box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
+  transform: scale(1.05, 1.02);
+}
+
+main {
+  margin: 7rem 1rem;
+}
+
+div.technical-S {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+div.technical-S p {
+  background-color: rgba(255, 82, 168, 0.05);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+div.technical-S h1 {
+  /* font-size: 3.75rem; */
+  font-size: clamp(2.2rem, 2.5vw + 1rem, 3.75rem);
+}
+
+div.technical-S h1.digi-inn {
+  color: rgb(136, 65, 101);
+}
+
+div.technical-S h4 {
+  max-width: 50rem;
+  text-align: center;
+}
+
+div.ability {
+  margin: 2rem auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 60rem;
+}
+
+div.ability div {
+  background-color: rgba(255, 82, 168, 0.08);
+  padding: 1rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  width: 17rem;
+  text-align: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+div.code-svg path {
+  fill: rgb(136, 65, 101);
+}
+
+div.action-call {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+div.action-call a {
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(136, 65, 101);
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 15rem;
+}
+
+span.d-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.5s ease;
+}
+
+div.action-call:hover span.d-arrow {
+  transform: translateY(15%);
+}
+
+div.action-call a svg {
+  fill: rgb(200, 200, 200);
+}
+
+div.expertises {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+div.expertises h2 {
+  color: rgb(136, 65, 101);
+  font-size: 2.25rem;
+}
+
+div.services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+div.s-content {
+  border-radius: 1rem;
+  border: 2px solid rgb(136, 65, 101);
+  box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.sc-child {
+  padding: 2rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+div.code-icon {
+  display: flex;
+}
+
+div.code-icon div {
+  background-color: rgba(255, 82, 168, 0.08);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+div.code-icon svg {
+  height: 3rem;
+  width: 3rem;
+}
+
+div.code-icon svg path {
+  fill: rgb(136, 65, 101);
+}
+
+div.TWD {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+div.TWD h2 {
+  color: rgb(136, 65, 101);
+}
+
+div.assurance {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
+
+div.assurance div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 82, 168, 0.04);
+  padding: 0.5rem 0.7rem;
+  border-radius: 2rem;
+}
+
+div.track-r {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-items: center; */
+  gap: 1rem;
+  font-size: 0.7rem;
+}
+
+div.track-r span {
+  background-color: rgba(255, 82, 168, 0.04);
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+div.track-r span p:first-of-type {
+  font-size: 1.2rem;
+  padding: 0.3rem 0;
+}
+
+div.c-use {
+  background-color: rgba(255, 82, 168, 0.04);
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+div.c-use p {
+  font-size: 0.9rem;
+  padding-top: 0.2rem;
+}
+
+div.assurance2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+div.assurance2 div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+div.ideal-f {
+  margin-top: 1rem;
+}
+
+div.ideal-f div {
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+div.ideal-f span {
+  background-color: rgba(255, 82, 168, 0.04);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+div.lyp a {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgb(112, 55, 83);
+  width: 90%;
+  margin: 1.5rem auto;
+  border-radius: 2rem;
+  padding: 0.7rem 0;
+  text-decoration: none;
+  /* font-size: 1.1rem; */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+div.lyp a:hover {
+  background-color: rgb(136, 65, 101);
+}
+
+div.lyp svg {
+  fill: rgb(200, 200, 200);
+}
+
+div.code-icon svg.graduate path {
+  fill: rgb(136, 65, 101);
+}
+
+@media screen and (max-width: 880px) {
+  div.technical-S h1 {
+    /* font-size: 3rem; */
+  }
+}
