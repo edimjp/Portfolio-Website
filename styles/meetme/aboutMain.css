@@ -1,0 +1,190 @@
+html.dark-mode nav ul li a.meetme {
+  display: flex;
+  align-self: center;
+  /* justify-content: center; */
+  gap: 1rem;
+  text-decoration: none;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.2rem;
+  /* transition: transform 0.3s ease-in-out; */
+  background: linear-gradient(
+    120deg,
+    rgba(166, 77, 122, 0.8),
+    rgba(255, 223, 128, 0.8)
+  );
+  box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
+  transform: scale(1.05, 1.02);
+}
+
+nav ul li a.meetme {
+  background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
+  box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
+  transform: scale(1.05, 1.02);
+}
+
+main {
+  margin: 7rem 2rem 4rem;
+}
+
+div.profile-section {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  color: rgb(166, 77, 121);
+  animation: slideUp 2s ease-in-out;
+  align-items: center;
+}
+
+img.profile-pic {
+  max-height: 40rem;
+  border-radius: 5rem;
+  object-fit: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  mix-blend-mode: luminosity;
+  margin: 0 auto;
+}
+
+.profile-text {
+  text-align: justify;
+}
+
+.profile-section p {
+  color: rgb(166, 77, 121);
+  font-size: clamp(0.7rem, 2vw + 0.9rem, 1.2rem);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* .profile-text h3 {
+  font-size: medium;
+  font-weight: 100;
+} */
+
+.profile-text h1 {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3.75rem;
+}
+
+.profile-text div {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+div.view-portfolio button {
+  padding: 0.7rem 1rem;
+  border: 1px solid rgb(166, 77, 121);
+  /* all: unset; */
+  cursor: pointer;
+  background: none;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  box-shadow: 0.2px 0.2px 2px rgb(207, 104, 156);
+  transition: all 0.3s ease;
+}
+
+div.view-portfolio button:hover {
+  background-color: rgba(166, 77, 121, 0.2);
+  border-width: 2.5px;
+}
+
+.mySkills {
+  margin-top: 3rem;
+}
+
+div.image-slider svg {
+  height: 3rem;
+  width: 3rem;
+}
+
+div.image-slider svg.NodeJs {
+  fill: none;
+}
+
+div.image-slider svg.NodeJS path {
+  fill: rgb(166, 66, 121);
+}
+
+div.image-slider svg.python,
+svg.python g {
+  fill: rgb(166, 66, 121);
+}
+
+div.image-slider svg.React {
+  animation: rotate 2s linear infinite;
+}
+
+.mySkills-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mySkills-div span {
+  flex: 1;
+  background-color: rgb(200, 200, 200);
+  height: 2px;
+}
+
+html.dark-mode main div.mySkills-div h1 {
+  margin: 0; /* Remove default margins */
+  text-align: center; /* Center align the text */
+  white-space: nowrap; /* Prevent text from breaking into multiple lines */
+  color: rgb(166, 66, 121);
+}
+
+.image-slider-parent {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-slider {
+  display: flex;
+  gap: 20px;
+  animation: scroll 10s linear infinite;
+  width: max-content;
+}
+
+div.image-slider > * {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+div.image-slider > div > p {
+  font-weight: 700;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100vw);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* 
+.image-slider .node-logo{
+  margin-right: 50px;
+} */
