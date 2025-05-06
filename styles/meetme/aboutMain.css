@@ -27,21 +27,21 @@ main {
 }
 
 div.profile-section {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1.3fr; */
+  justify-content: center;
+  gap: clamp(1rem, 1vw + 2.5rem, 4rem);
   color: rgb(166, 77, 121);
   animation: slideUp 2s ease-in-out;
   align-items: center;
 }
 
 img.profile-pic {
-  max-height: 40rem;
+  max-height: clamp(15rem, 40vw, 40rem);
+  /* max-height: 40rem; */
   border-radius: 5rem;
   object-fit: cover;
-  padding-top: 20px;
-  padding-bottom: 20px;
   mix-blend-mode: luminosity;
-  margin: 0 auto;
 }
 
 .profile-text {
@@ -50,16 +50,19 @@ img.profile-pic {
 
 .profile-section p {
   color: rgb(166, 77, 121);
-  font-size: clamp(0.7rem, 2vw + 0.9rem, 1.2rem);
+  font-size: clamp(0.7rem, 3vw, 1.2rem);
+  max-width: 45rem;
 }
 
 @keyframes slideUp {
   from {
     transform: translateY(20%);
+    opacity: 0;
   }
 
   to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -69,23 +72,20 @@ img.profile-pic {
 } */
 
 .profile-text h1 {
-  margin-left: 2rem;
-  margin-bottom: 2rem;
-  font-size: 3.75rem;
+  margin-left: clamp(0, 10vw, 2rem);
+  margin-bottom: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(2rem, 10vw, 4rem);
 }
 
 .profile-text div {
-  margin-left: 2rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
-div.view-portfolio button {
+div.view-portfolio a {
   padding: 0.7rem 1rem;
   border: 1px solid rgb(166, 77, 121);
-  /* all: unset; */
-  cursor: pointer;
-  background: none;
-  font-size: 1.1rem;
+  text-decoration: none;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
   border-radius: 1rem;
   font-weight: bold;
   box-shadow: 0.2px 0.2px 2px rgb(207, 104, 156);
@@ -136,7 +136,7 @@ div.image-slider svg.React {
   height: 2px;
 }
 
-html.dark-mode main div.mySkills-div h1 {
+html.dark-mode main div.mySkills-div h2 {
   margin: 0; /* Remove default margins */
   text-align: center; /* Center align the text */
   white-space: nowrap; /* Prevent text from breaking into multiple lines */
@@ -184,7 +184,10 @@ div.image-slider > div > p {
     transform: translateX(-100%);
   }
 }
-/* 
-.image-slider .node-logo{
-  margin-right: 50px;
-} */
+
+@media screen and (max-width: 1060px) {
+  div.profile-section {
+    flex-direction: column;
+    align-items: start;
+  }
+}
