@@ -5,41 +5,31 @@ main.mainDiv {
   justify-content: center;
 }
 
-/* main div.main-writeup-div {
-  /* display: flex; 
-  gap: 2rem;
-  /* flex-wrap: wrap; */
-/* justify-content: space-between;
-} */
-
 main div.main-writeup {
   max-width: 50rem;
   margin-left: 1rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 main div.main-writeup > :nth-child(2) {
   margin: 1.5rem 0;
 }
 
-main div h1 {
+main div.main-writeup h1 {
   font-size: 3rem;
   font-weight: 700;
-  /* color: rgb(253, 253, 253); */
   max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 main div p {
   font-size: 1.2rem;
   font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
 }
-
-/* main div.skills-div{
-    display: flex;
-} */
 
 main div.skills {
   display: flex;
@@ -68,13 +58,7 @@ main div.skills div:hover {
 
 main div.skills div span {
   color: rgb(255, 223, 128);
-  /* font-size: 1rem; */
 }
-
-/* main div.skills img {
-  height: 1.3rem;
-  width: 1.3rem;
-} */
 
 main div.skills div svg {
   height: 1.3rem;
@@ -83,8 +67,6 @@ main div.skills div svg {
 
 main div.skills svg.NodeJS {
   fill: none;
-  /* stroke: rgb(95, 47, 71);
-  stroke-width: 2; */
 }
 
 main div.skills svg.NodeJS path {
@@ -97,9 +79,10 @@ main div.main-writeup-div > :last-child {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  /* align-items: center;*/
-  margin-left: 1rem;
-  margin-right: 1rem;
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
+  /* margin: 0 auto; */
+  justify-content: center;
 }
 
 main div.main-writeup-div > :last-child a {

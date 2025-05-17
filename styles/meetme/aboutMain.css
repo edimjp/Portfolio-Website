@@ -39,7 +39,7 @@ div.profile-section {
 img.profile-pic {
   max-height: clamp(15rem, 40vw, 40rem);
   /* max-height: 40rem; */
-  border-radius: 5rem;
+  border-radius: clamp(2rem, 5vw, 5rem);
   object-fit: cover;
   mix-blend-mode: luminosity;
 }

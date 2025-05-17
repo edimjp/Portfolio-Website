@@ -50,7 +50,7 @@ nav svg.hamburger {
 
 nav svg.hamburger:hover,
 nav button:hover,
-aside div.aside-links a:hover {
+aside a.span-parent:hover {
   transform: scale(1.1, 1.1);
 }
 
@@ -97,16 +97,17 @@ aside div.title {
   z-index: 0;
 }
 
-aside div.span-parent {
+aside a.span-parent {
   margin: 0 auto 0 1rem;
   display: flex;
   align-items: center;
   display: inline-block;
   align-items: center;
   position: relative;
+  transition: transform 0.3s ease;
 }
 
-aside div.span-parent span {
+aside a.span-parent span {
   align-self: center;
 }
 
@@ -164,9 +165,7 @@ aside div.aside-links {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding: 1rem 0 0 1rem; */
+  overflow: hidden;
 }
 
 aside div.aside-links a {
@@ -176,22 +175,17 @@ aside div.aside-links a {
   margin: 0 0.5rem;
   border-radius: 4px;
   padding-left: 0.5rem;
-  background-color: rgb(151, 151, 170);
-  transition: background-color 0.3s ease;
 }
 
-aside div.aside-links a:hover {
+aside div.aside-links a.bgc-sc {
+  background-color: rgb(151, 151, 170);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+aside div.aside-links a.bgc-sc:hover {
+  transform: scale(1.03, 1.03);
   background-color: rgba(51, 51, 51, 0.7);
 }
-
-/* aside div.aside-links a img {
-  height: 2rem;
-  width: 2rem;
-  background-color: rgba(255, 82, 168, 0.05);
-
-  border-radius: 4px;
-  padding: 4px 0;
-} */
 
 aside div.aside-links a svg {
   height: 1.5rem;
@@ -264,7 +258,7 @@ nav a div.title:hover {
 }
 
 nav a div.title::before,
-nav aside div.span-parent::before {
+nav aside a.span-parent::before {
   content: "";
   position: absolute;
   height: 110%;
@@ -276,7 +270,7 @@ nav aside div.span-parent::before {
 }
 
 nav a div.title:hover::before,
-nav aside div.span-parent:hover::before {
+nav aside a.span-parent:hover::before {
   background: linear-gradient(
     to bottom left,
     rgb(166, 77, 121),

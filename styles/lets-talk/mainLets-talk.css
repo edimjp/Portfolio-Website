@@ -1,3 +1,10 @@
+:root {
+  --blue-color: #6366f1;
+  --black: #1f2937;
+  --gray: rgb(200, 200, 200);
+  --lightpink: rgb(136, 65, 101);
+}
+
 html.dark-mode nav ul li a.lets-talk {
   display: flex;
   align-self: center;
@@ -34,14 +41,26 @@ div.first-content {
 }
 
 div.im-ava {
-  background-color: rgb(225, 82, 168, 0.05);
   padding: 0.7rem 1rem;
   border-radius: 2rem;
   text-align: center;
+  /* color: #6366f1; */
+  color: #1f2937;
+  background: linear-gradient(to right, #afd3f7, #75a0f8);
+  /* background-color: #75a0f8; */
+}
+
+html.dark-mode div.im-ava {
+  background: rgb(225, 82, 168, 0.05);
+  color: rgb(200, 200, 200);
 }
 
 main.lt-main div.first-content h1 {
   font-size: clamp(2.2rem, 2.5vw + 1rem, 3.75rem);
+  color: #6366f1;
+}
+
+html.dark-mode main.lt-main div.first-content h1 {
   color: rgb(136, 65, 101);
 }
 
@@ -49,6 +68,11 @@ div.first-content p {
   text-align: center;
   max-width: 42rem;
   font-size: clamp(0.89rem, 1vw + 0.8rem, 1.25rem);
+  color: #1f2937;
+}
+
+html.dark-mode div.first-content p {
+  color: rgb(200, 200, 200);
 }
 
 div.second-content {
@@ -57,6 +81,10 @@ div.second-content {
 }
 
 div.location-content svg g.Location {
+  stroke: var(--blue-color);
+}
+
+html.dark-mode div.location-content svg g.Location {
   stroke: rgb(136, 65, 101);
 }
 
@@ -67,9 +95,13 @@ div.location-content {
   background-color: rgb(225, 82, 168, 0.05);
   padding: 0.7rem 1rem;
   margin-top: clamp(2rem, 2vw + 2rem, 5rem);
-  border: 1px solid rgb(136, 65, 101);
+  border: 1px solid var(--blue-color);
   border-radius: 2rem;
   justify-content: space-between;
+}
+
+html.dark-mode div.location-content {
+  border: 1px solid var(--lightpink);
 }
 
 div.location-content div {
@@ -80,7 +112,19 @@ div.location-content div {
 
 div.location-content > div:nth-child(1) {
   padding-right: 1rem;
+  border-right: 1px solid var(--blue-color);
+}
+
+html.dark-mode div.location-content > div:nth-child(1) {
   border-right: 1px solid rgb(136, 65, 101);
+}
+
+div.location-content > div span {
+  color: var(--black);
+}
+
+html.dark-mode div.location-content > div span {
+  color: var(--gray);
 }
 
 div.location-content > div:nth-child(2) {
@@ -88,11 +132,6 @@ div.location-content > div:nth-child(2) {
 }
 
 div.reach-me {
-  /* display: flex; */
-  /* margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-left: ; */
-
   margin: 3rem clamp(1rem, 3vw + 1rem, 7rem);
 }
 
@@ -107,13 +146,18 @@ div.rm-child {
 
 div.rm-child a {
   text-decoration: none;
-  border: 1px solid rgb(136, 65, 101);
+  border: 1px solid var(--blue-color);
   border-radius: 1rem;
   padding: clamp(0.1rem, 2vw + 0.2rem, 2rem);
   display: flex;
   flex-direction: column;
   gap: 1rem;
   transition: background-color 0.3s ease;
+  color: var(--black);
+}
+
+html.dark-mode div.rm-child a {
+  border: 1px solid var(--lightpink);
 }
 
 div.rm-child a:hover {
@@ -131,15 +175,26 @@ div.rm-content {
 }
 
 div.rm-content > span:nth-child(1) {
-  background-color: rgb(225, 82, 168, 0.05);
+  background-color: rgba(99, 102, 241, 0.15);
   padding: clamp(0.4rem, 5vw + 0.5rem, 1rem) 1rem;
   border-radius: 4px;
+}
+
+html.dark-mode div.rm-content > span:nth-child(1) {
+  background-color: rgb(225, 82, 168, 0.05);
 }
 
 div.rm-content > span:nth-child(2) {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+div.rm-content > span h4,
+div.rm-content > span p,
+div.av-content p,
+div.av-parent {
+  color: var(--black);
 }
 
 div.rm-content > span:nth-child(2) p {
@@ -160,7 +215,7 @@ div.av-parent div {
 div.av-parent span {
   font-size: 0.875rem;
   font-weight: bold;
-  color: rgb(136, 65, 101);
+  /* color: rgb(136, 65, 101); */
   transform: translateX(0);
   transition: transform 0.5s ease;
 }

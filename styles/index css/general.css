@@ -239,13 +239,6 @@ html.dark-mode aside div.aside-links a {
   background-color: transparent;
 }
 
-html.dark-mode aside div.aside-links a:hover {
-  background-color: rgba(51, 51, 51, 0.7);
-}
-/* main {
-  margin-top: 30px;
-  } */
-
 @media screen and (max-width: 470px) {
   h1 {
     font-size: 2rem;
