@@ -1,3 +1,11 @@
+html.dark-mode {
+  color: var(--gray);
+}
+
+html {
+  color: var(--black);
+}
+
 html.dark-mode nav ul li a.portfolio {
   display: flex;
   align-self: center;
@@ -22,20 +30,34 @@ nav ul li a.portfolio {
   transform: scale(1.05, 1.02);
 }
 
+html.dark-mode div.aside-links a.link-portfolio {
+  background-color: rgba(136, 65, 101, 0.2) !important;
+}
+
+div.aside-links a.link-portfolio {
+  background-color: rgba(33, 47, 129, 0.8) !important;
+}
+
 main {
   margin: 7rem 1rem;
 }
 
+html.dark-mode body svg.portfolio-stroke {
+  fill: none;
+  stroke-width: 3;
+  stroke: rgb(136, 65, 101);
+}
+
 body svg.portfolio-stroke {
   fill: none;
-  stroke: rgb(136, 65, 101);
+  stroke: var(--blue-color);
   stroke-width: 3;
 }
 
-main span.porfolio-text,
+main span.portfolio-text,
 div.f-works span.fws {
   font-size: 0.875rem;
-  color: rgb(136, 65, 101);
+  /* color: rgb(136, 65, 101); */
   font-weight: 650;
 }
 
@@ -44,13 +66,34 @@ main div.p-div-parent {
   margin-bottom: 1.5rem;
 }
 
-main div.p-div-child {
-  background-color: rgba(255, 82, 168, 0.05);
+html.dark-mode main div.p-div-child {
+  background: rgba(255, 82, 168, 0.05);
   padding: 0.7rem 0.7rem;
   border-radius: 2rem;
   display: flex;
   gap: 0.5rem;
-  align-self: center;
+  align-items: center;
+  border: 1px solid var(--lightpink);
+}
+
+main div.p-div-child {
+  background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
+  padding: 0.7rem 0.7rem;
+  border-radius: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--black);
+  border: 1px solid var(--blue-color);
+}
+
+div.p-div-child span.portfolio-text {
+  color: var(--lightpink);
+  color: var(--black);
+}
+
+html.dark-mode div.p-div-child span.portfolio-text {
+  color: var(--lightpink);
 }
 
 main div.intro-div {
@@ -67,12 +110,32 @@ main div.slogan-div-parent {
   gap: 2rem;
 }
 
+div.slogan-div-parent p {
+  color: var(--black);
+}
+
+html.dark-mode div.slogan-div-parent p {
+  color: var(--gray);
+}
+
 main div.slogan-div {
   font-size: 3.75rem;
 }
 
+div.slogan-div span {
+  color: var(--black);
+}
+
+html.dark-mode div.slogan-div span {
+  color: var(--gray);
+}
+
 main span.digi-inn {
-  color: rgb(136, 65, 101);
+  color: var(--blue-color);
+}
+
+html.dark-mode main span.digi-inn {
+  color: var(--lightpink);
 }
 
 main div.action-call-div {
@@ -84,8 +147,8 @@ main div.action-call-div {
   width: 100%;
 }
 
-main a.ac-child-div {
-  border: 2px solid rgb(200, 200, 200);
+html.dark-mode main a.ac-child-div {
+  border: 2px solid var(--lightpink);
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
   display: flex;
@@ -95,11 +158,38 @@ main a.ac-child-div {
   text-decoration: none;
   width: 45%;
   transition: 0.3s ease;
+  background: linear-gradient(
+    to bottom left,
+    rgb(166, 77, 121),
+    rgb(72, 191, 145)
+  );
 }
 
-main a.acd-color {
-  background-color: rgb(155, 75, 115);
+main a.ac-child-div {
+  border: 2px solid var(--blue-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 45%;
   transition: 0.3s ease;
+  background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
+}
+
+/* main a.ac-child-div:hover {
+  background-color: rgb(155, 75, 115);
+  /* transition: 0.3s ease;
+  } */
+
+a.ac-child-div span {
+  color: var(--black);
+}
+
+html.dark-mode a.ac-child-div span {
+  color: var(--gray);
 }
 
 main a.acd-color span,
@@ -107,16 +197,19 @@ main a.sam span {
   transition: 0.3s ease;
 }
 
+html.dark-mode main svg.lets-talk,
+main a.sam svg {
+  transition: 0.3s ease;
+  fill: var(--gray);
+}
+
 main svg.lets-talk,
 main a.sam svg {
   transition: 0.3s ease;
-  fill: rgb(200, 200, 200);
+  fill: var(--blue-color);
 }
 
 main div.coding-image {
-  /* background-color: rgba(255, 82, 168, 0.05); */
-  /* padding: 1.5rem; */
-  /* border-radius: 1rem; */
   display: flex;
   justify-content: center;
 }
@@ -144,18 +237,40 @@ main div.f-works {
   margin-top: 7em;
 }
 
-div.f-works span.f-works-span {
-  background-color: rgba(255, 82, 168, 0.05);
+html.dark-mode div.f-works span.f-works-span {
+  background: linear-gradient(
+    to bottom left,
+    rgb(166, 77, 121),
+    rgb(72, 191, 145)
+  );
   display: flex;
   align-items: center;
   gap: 0.7rem;
   padding: 0.7rem;
   border-radius: 2rem;
+  border: 1px solid var(--lightpink);
 }
 
-div.ph-div h2,
+div.f-works span.f-works-span {
+  background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  border: 1px solid var(--blue-color);
+}
+
+/* div.ph-div h2,
 div.rtb h2 {
   color: rgb(155, 75, 115);
+  } */
+div.ph-div h2 {
+  color: var(--blue-color);
+}
+
+html.dark-mode div.ph-div h2 {
+  color: var(--lightpink);
 }
 
 div.ph-div p {
@@ -174,7 +289,7 @@ div.p-content {
   justify-content: center;
 }
 
-div.img-text-pdiv {
+html.dark-mode div.img-text-pdiv {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -186,6 +301,21 @@ div.img-text-pdiv {
   border: 2px solid rgb(136, 65, 101);
   border-radius: 1rem;
   box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
+  overflow: hidden;
+}
+
+div.img-text-pdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 40rem;
+  min-height: 40rem;
+  max-height: 45rem;
+  max-width: 30rem;
+  min-width: 15rem;
+  border: 2px solid var(--blue-color);
+  border-radius: 1rem;
+  box-shadow: 0px 5px 10px rgba(33, 47, 129, 0.4);
   overflow: hidden;
 }
 
@@ -209,8 +339,15 @@ div.pc-writeup {
   height: 50%;
 }
 
+html.dark-mode div.img-text-pdiv h2 {
+  font-size: 1.5rem;
+  color: var(--lightpink);
+}
+
 div.img-text-pdiv h2 {
   font-size: 1.5rem;
+  color: var(--darkblue);
+  /* color: var(--blue-color); */
 }
 
 div.img-text-pdiv p {
@@ -219,12 +356,30 @@ div.img-text-pdiv p {
   text-align: justify;
 }
 
+html.dark-mode main div.more-cs {
+  margin: 0 auto;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  background: linear-gradient(
+    to bottom left,
+    rgb(166, 77, 121),
+    rgb(72, 191, 145)
+  );
+  animation: pendulum-swing 3s ease-in-out infinite forwards;
+}
+
 main div.more-cs {
   margin: 0 auto;
-  background-color: rgba(255, 82, 168, 0.05);
-  padding: 0.7rem 0.7rem;
+  background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
+  color: var(--black);
+  padding: 0.7rem 1rem;
   border-radius: 2rem;
-  /* color: rgb(136, 65, 101); */
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
   animation: pendulum-swing 3s ease-in-out infinite forwards;
 }
 
@@ -252,11 +407,9 @@ main div.more-cs {
 }
 
 div.more-cs span.morecs-span {
-  /* background-color: rgba(255, 82, 168, 0.05); */
-  padding: 0.7rem 0.7rem;
   border-radius: 2rem;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: clamp(0.7rem, 5vw, 1.5rem);
 }
 
 div.pc-link {
@@ -265,9 +418,8 @@ div.pc-link {
   margin-top: 1rem;
 }
 
-div.pc-link a {
+html.dark-mode div.pc-link a {
   text-decoration: none;
-  /* background-color: rgba(255, 82, 168, 0.05); */
   border: 1px solid rgb(155, 75, 115);
   border-radius: 4px;
   padding: 0.3rem 1rem;
@@ -278,7 +430,19 @@ div.pc-link a {
   position: relative;
 }
 
-div.pc-link a::after {
+div.pc-link a {
+  text-decoration: none;
+  border: 1px solid var(--blue-color);
+  border-radius: 4px;
+  padding: 0.3rem 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+}
+
+html.dark-mode div.pc-link a::after {
   content: "";
   position: absolute;
   background-color: rgb(155, 75, 115);
@@ -291,29 +455,65 @@ div.pc-link a::after {
   border-radius: 4px;
 }
 
+div.pc-link a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--blue-color);
+  height: 10%;
+  width: 0;
+  top: 105%;
+  left: 0;
+  transition: width 0.5s ease;
+  border-radius: 4px;
+}
+
 div.pc-link a:hover::after {
   width: 100%;
 }
 
-div.pc-link a.live {
+html.dark-mode div.pc-link a.live {
   background-color: rgba(166, 77, 121, 0.4);
-  /* border: 1px solid rgb(155, 75, 115); */
   transition: background-color 0.3s ease;
 }
 
-div.pc-link a.live:hover {
+div.pc-link a.live {
+  background-color: rgba(33, 47, 129, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+html.dark-mode div.pc-link a.live:hover {
   background-color: rgb(155, 75, 115);
   box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
   border: solid 1px rgb(200, 200, 200);
+}
+
+div.pc-link a.live:hover {
+  background-color: var(--blue-color);
+  box-shadow: 0px 5px 10px rgba(33, 47, 129, 0.4);
+  border: solid 1px var(--black);
+}
+
+html.dark-mode div.pc-link span {
+  color: var(--gray);
+}
+
+div.pc-link span {
+  color: var(--black);
 }
 
 div.pc-link a.github {
   transition: 0.3s ease;
 }
 
-div.pc-link a.github:hover {
+html.dark-mode div.pc-link a.github:hover {
   background-color: rgba(136, 65, 101, 0.3);
   border: solid 1px rgb(200, 200, 200);
+  box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
+}
+
+div.pc-link a.github:hover {
+  background-color: rgba(112, 99, 172, 0.2);
+  border: solid 1.5px var(--blue-color);
   box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
 }
 
@@ -325,9 +525,40 @@ div.rtb {
   gap: 1rem;
 }
 
+html.dark-mode div.rtb h2 {
+  color: var(--gray);
+}
+
+div.rtb h2 {
+  color: var(--darkblue);
+}
+
+html.dark-mode div.rtb p {
+  color: var(--gray);
+}
+
+div.rtb p {
+  color: var(--black);
+}
+
+html.dark-mode div.kyp {
+  margin: 1rem 0;
+  background: linear-gradient(
+    to bottom left,
+    rgb(166, 77, 121),
+    rgb(72, 191, 145)
+  );
+  border: 2px solid rgb(200, 200, 200);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  transition: 0.3s ease;
+}
+
 div.kyp {
   margin: 1rem 0;
-  background-color: rgb(155, 75, 115);
+  background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
   border: 2px solid rgb(200, 200, 200);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -339,24 +570,39 @@ div.kyp {
 div.kyp:hover,
 main a.acd-color:hover,
 main a.sam:hover {
-  background-color: rgba(200, 200, 200, 0.9);
-  border: 2px solid rgb(155, 75, 115);
+  background-color: var(--gray);
+  border: 2px solid var(--blue-color);
+}
+
+html.dark-mode div.kyp:hover svg,
+html.dark-mode main a.acd-color:hover svg,
+html.dark-mode main a.sam:hover svg {
+  fill: var(--lightpink);
 }
 
 div.kyp:hover svg,
 main a.acd-color:hover svg,
 main a.sam:hover svg {
-  fill: rgb(136, 65, 101);
+  fill: var(--blue-color);
+}
+html.dark-mode div.kyp:hover span,
+html.dark-mode main a.acd-color:hover span,
+html.dark-mode main a.sam:hover span {
+  color: var(--lightpink);
 }
 
 div.kyp:hover span,
 main a.acd-color:hover span,
 main a.sam:hover span {
-  color: rgb(136, 65, 101);
+  color: var(--blue-color);
+}
+
+html.dark-mode div.kyp svg {
+  fill: var(--gray);
 }
 
 div.kyp svg {
-  fill: rgba(200, 200, 200);
+  fill: var(--black);
 }
 
 div.kyp > * {
@@ -381,8 +627,6 @@ div.rtb p:first-of-type {
   main div.slogan-div-parent,
   main div.coding-image {
     width: auto; /* Optional, based on design  */
-    /* max-width: 95%; */
-    /* align-items: center; */
     text-align: center;
   }
 

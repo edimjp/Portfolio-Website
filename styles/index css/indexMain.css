@@ -3,6 +3,9 @@ main.mainDiv {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%; */
 }
 
 main div.main-writeup {
@@ -14,6 +17,9 @@ main div.main-writeup {
 
 main div.main-writeup > :nth-child(2) {
   margin: 1.5rem 0;
+  animation: slideInUp 0.6s ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
 }
 
 main div.main-writeup h1 {
@@ -22,6 +28,20 @@ main div.main-writeup h1 {
   max-width: 450px;
   margin: 0 auto;
   text-align: center;
+  animation: slideInUp 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 main div p {
@@ -49,6 +69,28 @@ main div.skills div {
   align-items: center;
   gap: 1rem;
   transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInUp 0.5s ease-out forwards;
+}
+
+main div.skills > div:nth-child(1) {
+  animation-delay: 1s;
+}
+main div.skills > div:nth-child(2) {
+  animation-delay: 1.2s;
+}
+main div.skills > div:nth-child(3) {
+  animation-delay: 1.4s;
+}
+main div.skills > div:nth-child(4) {
+  animation-delay: 1.6s;
+}
+main div.skills > div:nth-child(5) {
+  animation-delay: 1.8s;
+}
+main div.skills > div:nth-child(6) {
+  animation-delay: 2s;
 }
 
 main div.skills div:hover {
@@ -79,9 +121,6 @@ main div.main-writeup-div > :last-child {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  /* margin-left: 1rem;
-  margin-right: 1rem; */
-  /* margin: 0 auto; */
   justify-content: center;
 }
 
@@ -95,6 +134,9 @@ main div.main-writeup-div > :last-child a {
   border-radius: 2rem;
   padding: 0.5rem 2rem;
   transition: all 0.3s ease-in-out;
+  animation: slideinfromleft 0.5s ease-out forwards;
+  animation-delay: 2.7s;
+  opacity: 0;
 }
 
 main div.main-writeup-div > :last-child a.project-link {
@@ -103,6 +145,23 @@ main div.main-writeup-div > :last-child a.project-link {
     rgb(166, 77, 121),
     rgb(72, 191, 145)
   );
+  animation: slideinfromleft 0.5s ease-out forwards;
+  animation-delay: 2.3s;
+  opacity: 0;
+}
+
+@keyframes slideinfromleft {
+  0% {
+    opacity: 0;
+    scale: 0.3;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+  }
 }
 
 main div.main-writeup-div > :last-child a svg {
@@ -122,12 +181,7 @@ main div.main-writeup-div > :last-child a:hover {
 }
 
 main > :last-child {
-  /* margin-right: 7rem; */
   margin: 2rem auto 0;
-  /* box-shadow: 0px 10px 20px rgba(166, 77, 121, 0.6);
-  width: 250px;
-  height: 330px;
-  border-radius: 50%; */
 }
 
 main div img.profile-pic {
@@ -153,6 +207,18 @@ main div img.profile-pic {
     transform: translateY(0);
   }
 }
+
+/* @keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+} */
 
 @media screen and (max-width: 486px) {
   main div.main-writeup-div > :last-child a {

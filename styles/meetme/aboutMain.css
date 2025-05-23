@@ -22,13 +22,20 @@ nav ul li a.meetme {
   transform: scale(1.05, 1.02);
 }
 
+html.dark-mode div.aside-links a.link-meetme {
+  background-color: rgba(136, 65, 101, 0.2) !important;
+}
+
+div.aside-links a.link-meetme {
+  background-color: rgba(33, 47, 129, 0.8) !important;
+}
+
 main {
   margin: 7rem 2rem 4rem;
 }
 
 div.profile-section {
   display: flex;
-  /* grid-template-columns: 1fr 1.3fr; */
   justify-content: center;
   gap: clamp(1rem, 1vw + 2.5rem, 4rem);
   color: rgb(166, 77, 121);
@@ -42,16 +49,70 @@ img.profile-pic {
   border-radius: clamp(2rem, 5vw, 5rem);
   object-fit: cover;
   mix-blend-mode: luminosity;
+  /* animation: wiggle 1s ease-in-out infinite; Add this line */
+  animation-name: wiggle;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 
-.profile-text {
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  1% {
+    transform: rotate(5deg);
+  }
+  2% {
+    transform: rotate(-5deg);
+  }
+  3% {
+    transform: rotate(4deg);
+  }
+  4% {
+    transform: rotate(-4deg);
+  }
+  5% {
+    transform: rotate(3deg);
+  }
+  6% {
+    transform: rotate(-3deg);
+  }
+  7% {
+    transform: rotate(2deg);
+  }
+  9% {
+    transform: rotate(-2deg);
+  }
+  18% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+div.profile-text {
   text-align: justify;
 }
 
-.profile-section p {
-  color: rgb(166, 77, 121);
+div.profile-text h1.aboutMe {
+  color: var(--blue-color);
+}
+
+html.dark-mode div.profile-text h1.aboutMe {
+  color: var(--lightpink);
+}
+
+div.profile-section p {
+  color: var(--black);
   font-size: clamp(0.7rem, 3vw, 1.2rem);
   max-width: 45rem;
+}
+
+html.dark-mode div.profile-section p {
+  color: var(--gray);
 }
 
 @keyframes slideUp {
@@ -66,11 +127,6 @@ img.profile-pic {
   }
 }
 
-/* .profile-text h3 {
-  font-size: medium;
-  font-weight: 100;
-} */
-
 .profile-text h1 {
   margin-left: clamp(0, 10vw, 2rem);
   margin-bottom: clamp(1rem, 3vw, 2rem);
@@ -83,7 +139,8 @@ img.profile-pic {
 
 div.view-portfolio a {
   padding: 0.7rem 1rem;
-  border: 1px solid rgb(166, 77, 121);
+  border: 1px solid var(--blue-color);
+  color: var(--black);
   text-decoration: none;
   font-size: clamp(0.8rem, 2vw, 1.1rem);
   border-radius: 1rem;
@@ -92,9 +149,19 @@ div.view-portfolio a {
   transition: all 0.3s ease;
 }
 
-div.view-portfolio button:hover {
-  background-color: rgba(166, 77, 121, 0.2);
-  border-width: 2.5px;
+html.dark-mode div.view-portfolio a {
+  border: 1px solid var(--lightpink);
+  color: var(--gray);
+}
+
+div.view-portfolio a:hover {
+  background-color: rgba(33, 47, 129, 0.096);
+  border-width: 1.7px;
+}
+
+html.dark-mode div.view-portfolio a:hover {
+  background-color: rgba(166, 77, 122, 0.1);
+  border-width: 1.7px;
 }
 
 .mySkills {
@@ -111,33 +178,49 @@ div.image-slider svg.NodeJs {
 }
 
 div.image-slider svg.NodeJS path {
-  fill: rgb(166, 66, 121);
+  fill: var(--blue-color);
+}
+
+html.dark-mode div.image-slider svg.NodeJS path {
+  fill: var(--gray);
 }
 
 div.image-slider svg.python,
 svg.python g {
-  fill: rgb(166, 66, 121);
+  fill: var(--blue-color);
+}
+
+html.dark-mode div.image-slider svg.python,
+html.dark-mode svg.python g {
+  fill: var(--gray);
 }
 
 div.image-slider svg.React {
   animation: rotate 2s linear infinite;
 }
 
-.mySkills-div {
+div.mySkills-div {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
 
-.mySkills-div span {
+div.mySkills-div span {
   flex: 1;
-  background-color: rgb(200, 200, 200);
+  background-color: var(--blue-color);
   height: 2px;
 }
 
-html.dark-mode main div.mySkills-div h2 {
-  margin: 0; /* Remove default margins */
+html.dark-mode div.mySkills-div span {
+  background-color: var(--gray);
+}
+
+div.mySkills-div h2 {
+  color: var(--black);
+}
+
+html.dark-mode div.mySkills-div h2 {
   text-align: center; /* Center align the text */
   white-space: nowrap; /* Prevent text from breaking into multiple lines */
   color: rgb(166, 66, 121);
@@ -148,11 +231,19 @@ html.dark-mode main div.mySkills-div h2 {
   overflow: hidden;
 }
 
-.image-slider {
+div.image-slider {
   display: flex;
   gap: 20px;
   animation: scroll 10s linear infinite;
   width: max-content;
+}
+
+div.image-slider svg {
+  fill: var(--blue-color);
+}
+
+html.dark-mode div.image-slider svg {
+  fill: var(--gray);
 }
 
 div.image-slider > * {
@@ -163,6 +254,11 @@ div.image-slider > * {
 
 div.image-slider > div > p {
   font-weight: 700;
+  color: var(--black);
+}
+
+html.dark-mode div.image-slider > div > p {
+  color: var(--lightpink);
 }
 
 @keyframes rotate {

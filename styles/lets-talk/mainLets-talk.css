@@ -1,19 +1,10 @@
-:root {
-  --blue-color: #6366f1;
-  --black: #1f2937;
-  --gray: rgb(200, 200, 200);
-  --lightpink: rgb(136, 65, 101);
-}
-
 html.dark-mode nav ul li a.lets-talk {
   display: flex;
   align-self: center;
-  /* justify-content: center; */
   gap: 1rem;
   text-decoration: none;
   padding: 0.1rem 0.5rem;
   border-radius: 0.2rem;
-  /* transition: transform 0.3s ease-in-out; */
   background: linear-gradient(
     120deg,
     rgba(166, 77, 122, 0.8),
@@ -27,6 +18,22 @@ nav ul li a.lets-talk {
   background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
   box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
   transform: scale(1.05, 1.02);
+}
+
+html.dark-mode div.aside-links a.link-letstalk {
+  background-color: rgba(136, 65, 101, 0.2) !important;
+}
+
+div.aside-links a.link-letstalk {
+  background-color: rgba(33, 47, 129, 0.8) !important;
+}
+
+html.dark-mode {
+  color: var(--gray);
+}
+
+html {
+  color: var(--black);
 }
 
 main.lt-main {
@@ -43,16 +50,17 @@ div.first-content {
 div.im-ava {
   padding: 0.7rem 1rem;
   border-radius: 2rem;
+  font-weight: 700;
   text-align: center;
-  /* color: #6366f1; */
   color: #1f2937;
   background: linear-gradient(to right, #afd3f7, #75a0f8);
-  /* background-color: #75a0f8; */
+  border: 1px solid var(--blue-color);
 }
 
 html.dark-mode div.im-ava {
   background: rgb(225, 82, 168, 0.05);
-  color: rgb(200, 200, 200);
+  color: var(--lightpink);
+  border: 1px solid var(--lightpink);
 }
 
 main.lt-main div.first-content h1 {
@@ -90,17 +98,16 @@ html.dark-mode div.location-content svg g.Location {
 
 div.location-content {
   display: flex;
-  /* gap: 1rem; */
-  /* align-items: center; */
-  background-color: rgb(225, 82, 168, 0.05);
   padding: 0.7rem 1rem;
   margin-top: clamp(2rem, 2vw + 2rem, 5rem);
   border: 1px solid var(--blue-color);
   border-radius: 2rem;
   justify-content: space-between;
+  background-color: rgba(33, 47, 129, 0.096);
 }
 
 html.dark-mode div.location-content {
+  background-color: rgb(225, 82, 168, 0.05);
   border: 1px solid var(--lightpink);
 }
 
@@ -158,10 +165,13 @@ div.rm-child a {
 
 html.dark-mode div.rm-child a {
   border: 1px solid var(--lightpink);
+  color: var(--gray);
+  box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
 }
 
 div.rm-child a:hover {
   background-color: rgba(166, 77, 121, 0.08);
+  box-shadow: 0px 5px 10px rgba(33, 47, 129, 0.4);
 }
 
 div.rm-child a:hover div.av-parent span {
@@ -190,7 +200,22 @@ div.rm-content > span:nth-child(2) {
   gap: 0.5rem;
 }
 
+html.dark-mode div.rm-content > span p,
+html.dark-mode div.av-content p,
+html.dark-mode div.av-parent {
+  color: var(--gray);
+}
+
+html.dark-mode div.rm-content > span h4,
+html.dark-mode div.av-parent span {
+  color: var(--lightpink);
+}
+
 div.rm-content > span h4,
+div.av-parent span {
+  color: var(--blue-color);
+}
+
 div.rm-content > span p,
 div.av-content p,
 div.av-parent {
@@ -241,18 +266,34 @@ div.connect {
   gap: 1rem;
 }
 
+html.dark-mode div.connect h2 {
+  color: var(--gray);
+}
+
+div.connect h2 {
+  color: var(--blue-color);
+}
+
 div.connect a {
   text-decoration: none;
-  border: 1px solid rgb(136, 65, 101);
+  border: 1px solid var(--blue-color);
   border-radius: 0.5rem;
   padding: 0.5rem 0.7rem;
   transition: all 0.3s ease;
 }
 
+html.dark-mode div.connect a {
+  border: 1px solid var(--lightpink);
+}
+
 div.connect a:hover {
-  background-color: rgba(166, 77, 121, 0.08);
+  background-color: rgba(33, 47, 129, 0.096);
   transform: scale(1.05);
   border-width: 2px;
+}
+
+html.dark-mode div.connect a:hover {
+  background-color: rgba(166, 77, 121, 0.08);
 }
 
 div.connect svg {
@@ -264,8 +305,12 @@ div.connect svg.socials {
   fill: none;
 }
 
+html.dark-mode div.connect svg.socials path {
+  stroke: var(--lightpink);
+}
+
 div.connect svg.socials path {
-  stroke: rgb(136, 65, 101);
+  stroke: var(--blue-color);
 }
 
 div.socials-link {
@@ -273,16 +318,23 @@ div.socials-link {
   gap: 1rem;
 }
 
+html.dark-mode div.socials-link svg.instagram g {
+  fill: var(--lightpink);
+}
 div.socials-link svg.instagram g {
-  fill: rgb(136, 65, 101);
+  fill: var(--blue-color);
 }
 
 div.pw-hours {
-  border: 1px solid rgb(136, 65, 101);
+  border: 1px solid var(--blue-color);
   padding: 1rem clamp(0.3rem, 5vw + 0.5rem, 1.5rem);
   border-radius: 1rem;
   margin-top: 4rem;
   text-align: center;
+}
+
+html.dark-mode div.pw-hours {
+  border: 1px solid var(--lightpink);
 }
 
 div.pw-hours > span:nth-child(1) {
@@ -291,14 +343,12 @@ div.pw-hours > span:nth-child(1) {
 
 div.pw-hours > span:nth-child(2) {
   font-weight: bold;
+  color: var(--blue-color);
 }
 
-/* @media screen and (min-width: 860px) {
-  div.rm-child {
-    width: 75%;
-    margin: 0 auto;
-  }
-} */
+html.dark-mode div.pw-hours > span:nth-child(2) {
+  color: var(--lightpink);
+}
 
 @media screen and (max-width: 860px) {
   div.im-ava {

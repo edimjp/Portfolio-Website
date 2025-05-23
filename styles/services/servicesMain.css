@@ -22,6 +22,22 @@ nav ul li a.services {
   transform: scale(1.05, 1.02);
 }
 
+html.dark-mode div.aside-links a.link-services {
+  background-color: rgba(136, 65, 101, 0.2) !important;
+}
+
+div.aside-links a.link-services {
+  background-color: rgba(33, 47, 129, 0.8) !important;
+}
+
+html.dark-mode {
+  color: var(--gray);
+}
+
+html {
+  color: var(--black);
+}
+
 main {
   margin: 7rem 1rem;
 }
@@ -33,19 +49,31 @@ div.technical-S {
   gap: 0.7rem;
 }
 
+html.dark-mode div.technical-S p {
+  background: rgba(255, 82, 168, 0.05);
+  border: 1px solid var(--lightpink);
+  color: var(--lightpink);
+}
+
 div.technical-S p {
-  background-color: rgba(255, 82, 168, 0.05);
-  padding: 1rem;
+  background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
+  padding: 0.7rem;
   border-radius: 2rem;
+  border: 1px solid var(--blue-color);
+  color: var(--black);
+  font-weight: 700;
 }
 
 div.technical-S h1 {
-  /* font-size: 3.75rem; */
   font-size: clamp(2.2rem, 2.5vw + 1rem, 3.75rem);
 }
 
+html.dark-mode div.technical-S h1.digi-inn {
+  color: var(--lightpink);
+}
+
 div.technical-S h1.digi-inn {
-  color: rgb(136, 65, 101);
+  color: var(--blue-color);
 }
 
 div.technical-S h4 {
@@ -62,9 +90,15 @@ div.ability {
   max-width: 60rem;
 }
 
+html.dark-mode div.ability div {
+  background: rgba(255, 82, 168, 0.08);
+  border: 1px solid var(--lightpink);
+}
+
 div.ability div {
-  background-color: rgba(255, 82, 168, 0.08);
-  padding: 1rem;
+  background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
+  border: 1px solid var(--blue-color);
+  padding: 0.7rem;
   border-radius: 2rem;
   font-weight: bold;
   width: 17rem;
@@ -75,8 +109,12 @@ div.ability div {
   align-items: center;
 }
 
+html.dark-mode div.code-svg path {
+  fill: var(--lightpink);
+}
+
 div.code-svg path {
-  fill: rgb(136, 65, 101);
+  fill: var(--blue-color);
 }
 
 div.action-call {
@@ -86,6 +124,16 @@ div.action-call {
   margin-top: 3rem;
 }
 
+html.dark-mode div.action-call a {
+  background: linear-gradient(
+    to bottom left,
+    rgb(166, 77, 121),
+    rgb(72, 191, 145)
+  );
+  border: 1px solid var(--lightpink);
+  color: var(--gray);
+}
+
 div.action-call a {
   text-decoration: none;
   font-weight: bold;
@@ -93,24 +141,34 @@ div.action-call a {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-color: rgb(136, 65, 101);
-  padding: 1rem;
-  /* padding: clamp(0.8rem, 1vw +1rem, 1.5rem); */
+  background: linear-gradient(to bottom left, #dbeafe, #bfdbfe);
+  padding: 0.7rem;
   border-radius: 2rem;
+  border: 1px solid var(--blue-color);
   width: 15rem;
+  color: var(--black);
+}
+
+html.dark-mode span.d-arrow {
+  color: var(--gray);
 }
 
 span.d-arrow {
   font-size: 1.1rem;
   transition: transform 0.5s ease;
+  color: var(--blue-color);
 }
 
 div.action-call a.ac-services:hover span.d-arrow {
   transform: translateY(15%);
 }
 
+html.dark-mode div.action-call a svg {
+  fill: var(--gray);
+}
+
 div.action-call a svg {
-  fill: rgb(200, 200, 200);
+  fill: var(--blue-color);
 }
 
 div.expertises {
@@ -123,23 +181,30 @@ div.expertises {
   margin-bottom: 3rem;
 }
 
+html.dark-mode div.expertises h2 {
+  color: var(--lightpink);
+}
+
 div.expertises h2 {
-  color: rgb(136, 65, 101);
+  color: var(--blue-color);
   font-size: 2.25rem;
-  /* font-size: clamp(1.5rem, 3vw + 1rem, 2.25rem); */
 }
 
 div.services {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
-  /* gap: clamp(1rem, 2vw + 1rem, 2rem)   */
+}
+
+html.dark-mode div.s-content {
+  border: 2px solid var(--lightpink);
+  box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
 }
 
 div.s-content {
   border-radius: 1rem;
-  border: 2px solid rgb(136, 65, 101);
-  box-shadow: 0px 5px 10px rgba(166, 77, 121, 0.4);
+  border: 2px solid var(--blue-color);
+  box-shadow: 0px 5px 10px rgba(33, 47, 129, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,8 +221,12 @@ div.code-icon {
   display: flex;
 }
 
-div.code-icon div {
+html.dark-mode div.code-icon div {
   background-color: rgba(255, 82, 168, 0.08);
+}
+
+div.code-icon div {
+  background-color: rgba(33, 47, 129, 0.096);
   padding: 0.5rem;
   border-radius: 4px;
 }
@@ -167,8 +236,12 @@ div.code-icon svg {
   width: 3rem;
 }
 
+html.dark-mode div.code-icon svg path {
+  fill: var(--lightpink);
+}
+
 div.code-icon svg path {
-  fill: rgb(136, 65, 101);
+  fill: var(--blue-color);
 }
 
 div.TWD {
@@ -177,8 +250,12 @@ div.TWD {
   gap: 0.5rem;
 }
 
+html.dark-mode div.TWD h2 {
+  color: var(--lightpink);
+}
+
 div.TWD h2 {
-  color: rgb(136, 65, 101);
+  color: var(--blue-color);
 }
 
 div.assurance {
@@ -192,25 +269,33 @@ div.assurance div {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: rgba(255, 82, 168, 0.04);
   padding: 0.5rem 0.7rem;
   border-radius: 2rem;
+  border: 1px solid var(--blue-color);
+  background-color: rgba(33, 47, 129, 0.096);
+}
+
+html.dark-mode div.assurance div {
+  background-color: rgba(255, 82, 168, 0.08);
+  border: 1px solid var(--lightpink);
 }
 
 div.track-r {
-  /* display: flex; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* justify-items: center; */
   gap: 1rem;
   font-size: 0.7rem;
 }
 
 div.track-r span {
-  background-color: rgba(255, 82, 168, 0.04);
   border-radius: 0.5rem;
   padding: 1rem 0;
   text-align: center;
+  background-color: rgba(33, 47, 129, 0.096);
+}
+
+html.dark-mode div.track-r span {
+  background-color: rgba(255, 82, 168, 0.04);
 }
 
 div.track-r span p:first-of-type {
@@ -219,9 +304,13 @@ div.track-r span p:first-of-type {
 }
 
 div.c-use {
-  background-color: rgba(255, 82, 168, 0.04);
   padding: 1rem 1rem;
   border-radius: 0.5rem;
+  background-color: rgba(33, 47, 129, 0.096);
+}
+
+html.dark-mode div.c-use {
+  background-color: rgba(255, 82, 168, 0.04);
 }
 
 div.c-use p {
@@ -246,6 +335,14 @@ div.ideal-f {
   margin-top: 1rem;
 }
 
+html.dark-mode div.ideal-f h4 {
+  color: var(--gray);
+}
+
+div.ideal-f h4 {
+  color: var(--blue-color);
+}
+
 div.ideal-f div {
   font-size: 0.9rem;
   display: flex;
@@ -255,45 +352,62 @@ div.ideal-f div {
 }
 
 div.ideal-f span {
-  background-color: rgba(255, 82, 168, 0.04);
+  background-color: rgba(33, 47, 129, 0.096);
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   text-align: center;
   font-size: 0.8rem;
+  border: 1px solid var(--blue-color);
+}
+
+html.dark-mode div.ideal-f span {
+  background-color: rgba(255, 82, 168, 0.06);
+  border: 1px solid var(--lightpink);
 }
 
 div.lyp a {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  background-color: rgb(112, 55, 83);
   width: 90%;
   margin: 1.5rem auto;
   border-radius: 2rem;
   padding: 0.7rem 0;
   text-decoration: none;
-  /* font-size: 1.1rem; */
   font-weight: bold;
   transition: background-color 0.3s ease;
+  background-color: rgb(81, 95, 158);
+  color: var(--black);
+}
+
+html.dark-mode div.lyp a {
+  color: var(--gray);
+  background-color: rgb(102, 56, 79);
+}
+
+html.dark-mode div.lyp a:hover {
+  background-color: var(--lightpink);
 }
 
 div.lyp a:hover {
-  background-color: rgb(136, 65, 101);
+  background-color: var(--blue-color);
+}
+
+html.dark-mode div.lyp svg {
+  fill: var(--gray);
 }
 
 div.lyp svg {
-  fill: rgb(200, 200, 200);
+  fill: var(--black);
+}
+
+html.dark-mode div.code-icon svg.graduate path {
+  fill: var(--lightpink);
 }
 
 div.code-icon svg.graduate path {
-  fill: rgb(136, 65, 101);
+  fill: var(--blue-color);
 }
-
-/* @media screen and (max-width: 880px) {
-  div.technical-S h1 {
-    /* font-size: 3rem;
-  }
-} */
 
 @media screen and (max-width: 625px) {
   div.ability div,
