@@ -149,15 +149,6 @@ main div.action-call-div {
 
 html.dark-mode main a.ac-child-div {
   border: 2px solid var(--lightpink);
-  padding: 0.5rem 1.5rem;
-  border-radius: 2rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  width: 45%;
-  transition: 0.3s ease;
   background: linear-gradient(
     to bottom left,
     rgb(166, 77, 121),
