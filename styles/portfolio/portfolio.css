@@ -602,6 +602,7 @@ div.kyp > * {
 
 div div.rtb > :last-child {
   font-size: 0.8rem;
+  text-align: center;
 }
 
 div.rtb p:first-of-type {

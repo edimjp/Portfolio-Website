@@ -17,21 +17,14 @@ html main {
   flex: 1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 aside {
-  /* background-color: rgb(26, 26, 29); */
-  /* background: linear-gradient(
-    118deg,
-    rgb(255, 246, 234) 0%,
-    rgb(243, 242, 241) 42.92%,
-    rgb(220, 235, 255) 100%
-  ); */
-  /* background-color: rgb(226, 232, 240);
-  color: black; */
   background: linear-gradient(120deg, #f9fafb 0%, #e5e7eb 40%, #1a1a1d 100%);
-
-  /* height: 100%; */
 }
 
 nav,
@@ -98,10 +91,6 @@ html.dark-mode footer {
 
 html main div.skills div {
   background: linear-gradient(118deg, #fff6ea 0%, #f3f2f1 42.92%, #dcebff 100%);
-
-  /* background: #ffffff; */
-  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); */
-  /* border-radius: 10px; */
 }
 
 html.dark-mode main div.skills div {
@@ -112,12 +101,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/* header,
-main,
-footer {
-  flex: 1;
-} */
 
 footer {
   margin-top: auto;
@@ -140,7 +123,6 @@ svg,
 html footer a.quick-link svg g.Location,
 html nav a.mode-link svg {
   fill: #6366f1; /* Updated to match primary accent */
-  /* fill: #2563eb; Updated to match primary accent */
   height: 1.3rem;
   width: 1.3rem;
 }
@@ -148,8 +130,7 @@ html nav a.mode-link svg {
 html.dark-mode svg,
 html.dark-mode footer a.quick-link svg g.Location,
 html.dark-mode nav a.mode-link svg {
-  /* fill: rgb(91, 47, 71); */
-  fill: rgb(136, 65, 101);
+  fill: rgb(166, 77, 121);
   height: 1.3rem;
   width: 1.3rem;
 }
@@ -180,13 +161,11 @@ html.dark-mode nav svg.hamburger {
 
 main div.skills svg.NodeJS path {
   fill: #6366f1;
-  /* stroke: rgb(95, 47, 71); */
 }
 
 html.dark-mode main div.skills svg.NodeJS path,
 html.dark-mode aside div.aside-links a svg {
-  fill: rgb(91, 47, 71);
-  /* stroke: rgb(95, 47, 71); */
+  fill: rgb(166, 77, 121);
 }
 
 html main div.skills div,
