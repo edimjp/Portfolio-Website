@@ -542,8 +542,8 @@ html.dark-mode div.kyp {
   border: 2px solid rgb(200, 200, 200);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
-  display: flex;
-  gap: 1rem;
+  /* display: flex;
+  gap: 1rem; */
   transition: 0.3s ease;
 }
 
@@ -553,9 +553,20 @@ div.kyp {
   border: 2px solid rgb(200, 200, 200);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
+  /* display: flex;
+  gap: 1rem; */
+  transition: 0.3s ease;
+}
+
+div.kyp a {
   display: flex;
   gap: 1rem;
-  transition: 0.3s ease;
+  text-decoration: none;
+  color: var(--black);
+}
+
+html.dark-mode div.kyp a {
+  color: var(--gray);
 }
 
 div.kyp:hover,
